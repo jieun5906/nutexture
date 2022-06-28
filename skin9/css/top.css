@@ -1,9 +1,9 @@
 #top {position:fixed; z-index:99; width:100%; left:0; top:0; font-size:14px; height:20px; line-height:20px; color:#000; -webkit-transition-duration: 0.3; transition-duration: 0.3s;}
 #top.active {height:20px; background-color:transparent; -webkit-transition-duration: 0.3; transition-duration: 0.3s;}
 #top a {text-decoration:none;}
-#top a:hover {text-decoration:none; font-weight:bold;}
-#top a:hover span {text-decoration:none; font-weight:bold;}
-#top .inner {margin:0 auto; padding:28px 44px 26px;}
+#top a:hover {text-decoration:none;/*  font-weight:bold; */}
+#top a:hover span {text-decoration:none;/*  font-weight:bold; */}
+#top .inner {margin:0 auto; padding:20px 20px 35px;}
 #top .inner .cont {display:flex; align-items:center; font-size:14px;}
 
 /* logo */
@@ -17,23 +17,24 @@
 #top #topsearch .search-bar input[type=text] {height:20px; padding:0; font-size:12px; color:#000; width:0; margin-right:10px; border:none; border-bottom:1px solid #000; background:transparent; -webkit-transition-duration: 0.3s; transition-duration: 0.3s;}
 #top #topsearch .search-bar input[type=text]:focus {outline: none;}
 #top #topsearch .search-bar:hover {cursor:pointer;}
-#top #topsearch.active .search-bar input[type=text] {height:20px; padding:0; font-size:11px; color:#000; width:100px; border:none; border-bottom:1px solid #000; -webkit-transition-duration: 0.3s; transition-duration: 0.3s;}
+#top #topsearch .search-bar.active input[type=text] {height:20px; padding:0; font-size:11px; color:#000; width:100px; border:none; border-bottom:1px solid #000; -webkit-transition-duration: 0.3s; transition-duration: 0.3s;}
 
 #top #log {font-size:14px; margin-left:25px; cursor:pointer;}
 
 #top #topcarticon {font-size:14px; margin-left:25px;}
 /* 멀티쇼핑몰 */
-#top .xans-layout-multishoplist.list { float:right; position:relative; z-index:10; height:19px; margin-top:0;}
+/* #top .xans-layout-multishoplist.list { float:right; position:relative; z-index:10; height:19px; margin-top:0;} */
 #top .xans-layout-multishoplist.list span {display:flex; align-items:center; font-size:14px;}
 #top .xans-layout-multishoplist.list span > i {font-size:16px; color:#000; margin-left:3px; transition:.3s;}
 #top .xans-layout-multishoplist.list .toggle { display:block; height:19px; padding:0; color:#000; line-height:19px;background:transparent }
-#top .xans-layout-multishoplist.list .toggle span:hover {font-weight:bold;}
+/* #top .xans-layout-multishoplist.list .toggle span:hover {font-weight:bold;} */
 #top .xans-layout-multishoplist.list .toggle span > img { vertical-align:middle; width:9px; height:6px; padding-left:10px;}
-#top .xans-layout-multishoplist.list > ul { display:none; position:absolute; left:0; top:25px; overflow:auto;}
-#top .xans-layout-multishoplist.list > ul li { position:relative; height:25px; line-height:30px; overflow:hidden;}
-#top .xans-layout-multishoplist.list > ul li:hover a {text-decoration:underline;}
+#top .xans-layout-multishoplist.list > ul {display: flex; align-items: center; /*  display:none; position:absolute; left:0; top:25px; overflow:auto; */}
+/* #top .xans-layout-multishoplist.list > ul li { position:relative; height:25px; line-height:30px; overflow:hidden;}
+#top .xans-layout-multishoplist.list > ul li:hover a {text-decoration:underline;} */
 #top .xans-layout-multishoplist.list > ul li a { display:block; /*padding:0 0 0 18px;*/ color:#000; white-space:nowrap; text-decoration:none; text-overflow:ellipsis; }
-#top .xans-layout-multishoplist.list > ul li a span {margin-right:10px;}
+#top .xans-layout-multishoplist.list > ul li a span {margin-right:5px;}
+#top .xans-layout-multishoplist.list > ul li:last-child a span {margin-right:0;}
 #top .xans-layout-multishoplist.list > ul li.selected a { background:#f3f3f3}
 #top .xans-layout-multishoplist.list > ul li a img {height:12px; position:absolute; left:0; top:9px; }
 #top .xans-layout-multishoplist.list > ul li a .name strong {  }

@@ -1,25 +1,20 @@
 /* 하단 */
-#bottom {width:100%; color:#fff; padding:100px 0 90px; background-color:#000; }
+#bottom {width:100%; color:#000; padding:237px 20px 20px; background-color:#fff; box-sizing: border-box;}
 #bottom .inner { margin:0 auto; display:flex; justify-content:space-between;}
 
-#bottom .footer-left .utilMenu {margin-top:33px;}
-#bottom .footer-left .utilMenu ul {display:flex; flex-wrap:wrap;}
-#bottom .footer-left .utilMenu ul li {width:33.33%; margin-bottom:17px;}
-#bottom .footer-left .utilMenu ul li:nth-last-child(-n+2) {margin-bottom:0;}
-#bottom .footer-left .utilMenu ul li a {color:#fff;font-family:'basis-grotesque-regular',sans-serif; font-size:14px;}
+#bottom .footer-left {display: flex; align-items: flex-start;}
+#bottom .footer-left > div {margin-right: 4.167vw;}
+#bottom .footer-left > div ul li {line-height: 18px;}
+#bottom .footer-left > div ul li a {color:#000; font-size:14px; font-family:'basis-grotesque-medium', sans-serif;}
+#bottom .footer-left > div p {line-height: 18px; color:#000; font-size:14px;}
 
-#bottom .footer-right {display:flex; align-items:flex-start;}
-#bottom .footer-right .cs {margin:47px 52px 0 0; line-height:17px; font-size:10px; font-family:'Noto Sans KR', sans-serif;}
-#bottom .footer-right .cs p {font-weight:300;}
+#bottom .footer-right > div {display:flex; align-items:flex-start;}
+#bottom .footer-right > div p span {line-height:18px; font-size:14px;}
+#bottom .footer-right .info {margin-right: 1.667vw;}
 #bottom .footer-right .sns {margin-bottom:15px;}
-#bottom .footer-right .sns ul {display:flex;}
-#bottom .footer-right .sns ul li {margin-right:18px;}
-#bottom .footer-right .sns ul li a {color:#fff; font-size:25px;}
-#bottom .footer-right .sns ul li a img {width:24px;}
+#bottom .footer-right .address span {font-family: 'Pretendard'; font-weight: 600; color: #8E8686; line-height: 18px;}
 #bottom .footer-right .address span:after {content:''; width:1px; height:10px; display:inline-block; background-color:#fff;position:absolute; top:3px; right:-1px;}
 #bottom .footer-right .address span.no-con:after {content:none;}
 #bottom .footer-right .address span.email a {text-decoration:none;}
 
-#bottom .footer-right .copyright {margin-top:11px; padding-left:5px;}
-#bottom .footer-right .fd-copyright {padding-left:5px; margin:0; line-height:10px;}
-#bottom .footer-right .fd-copyright a {color:#fff; font-size:10px;}
+#bottom .footer-right .copyright {line-height: 19px; color: #8E8686; padding-left: 5px; font-size: 14px; font-weight: normal;}
