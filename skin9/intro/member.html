@@ -1,0 +1,39 @@
+<div module="Intro_memberPackage">
+    <!--@css(/css/module/intro/memberPackage.css)-->
+    <h1><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/intro/h1_login.gif" alt="로그인" /></h1>
+    <div class="info">
+        <strong><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/intro/txt_login.gif" alt="회원전용 쇼핑몰입니다. Members Login" /></strong>
+        <p>회원 로그인 후 상품구매가 가능합니다. 회원가입 후 사용 해 주십시요.</p>
+    </div>
+    <div module="Member_Login">
+        <!--
+            $forbidIpUrl = member/adminFail.html
+            $defaultReturnUrl = /index.html
+        -->
+        <p class="login">
+            <span class="inputType">
+                <span class="name"><strong>아이디</strong> {$form.member_id} </span>
+                <span class="number"><strong>비밀번호</strong> {$form.member_passwd}<br /></span>
+            </span>
+            <span class="btn"><a href="#none" onclick="{$action_func_login}"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/intro/btn_login.gif" alt="로그인" /></a></span>
+        </p>
+        <p class="security">
+            <img src="http://img.echosting.cafe24.com/skin/base_ko_KR/member/ico_access.gif" alt="" /> 보안접속
+        </p>
+        <div class="join">
+            <p class="find">
+                <span><a href="/member/id/find_id.html{$skip_intro}" class="first">아이디</a></span>
+                <a href="/member/passwd/find_passwd_info.html{$skip_intro}">비밀번호 찾기</a>
+            </p>
+            
+            <p class="sns {$display_facebook|display}">
+                <a href="#none" onclick="{$facebook_func_login}"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/member/btn_facebook_login.gif" alt="페이스북 로그인" /></a>
+            </p>
+            
+            <p class="sns {$display_google|display}">
+                <a href="#none" onclick="{$google_func_login}"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/member/btn_google_login.gif" alt="구글 로그인" /></a>
+            </p>
+            <span class="joinus">아직 회원이 아니세요? <a href="/member/join.html{$skip_intro}"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/intro/btn_join.gif" alt="회원 가입" /></a></span>
+        </div>
+    </div>
+</div>

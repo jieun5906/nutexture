@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/* 공통 padding */
+.comm-pad {padding-left:4vw; padding-right:4vw;}
+
+.scrollTop { right:40px; position: absolute; bottom:40px; font-size:20px; z-index:99; display:none;}
+
+
+/* 전체를 감싸는 틀 */
+#contentsWrap {margin:0 auto;}
+#content {width:100%; margin:0 auto;}
+
+/* 상품분류페이지 전체를 감싸는 틀 */
+#listcontentWrap {
+    position: relative;
+    padding:115px 1.823vw 110px;
+    margin:0 auto;
+    min-height:600px;
+    margin-top:150px;
+}
+#listcontent {
+    margin-left:10.417vw;
+}
+#listcontentWrap22 {
+    position: relative;
+    padding:115px 0 110px;
+    /* padding-left: 35px; */
+    /* padding-right: 35px; */
+    margin:0 auto;
+    min-height:600px;
+    /* margin-top:100px; */
+}
+#listcontent22 {
+    margin-left:0;
+}
+/* FD상품상세 */
+#listcontentWrap3 {
+    position: relative;
+    padding:40px 0 10px;
+    /* padding-left: 35px; */
+    /* padding-right: 35px; */
+    margin:0 auto;
+    min-height:600px;
+    /* margin-top:100px; */
+}
+/* FD상품분류 */
+#listcontentWrap4 {
+    position: relative;
+    padding:120px 2.29vw 150px;
+    /* padding-left: 35px; */
+    /* padding-right: 35px; */
+    margin:0 auto;
+    min-height:600px;
+    /* margin-top:100px; */
+}
+
+
+/* 메인/상품페이지 제외, 공통페이지 전체를 감싸는 틀 */
+#listcontentWrap2 {
+    position: relative;
+    padding:115px 1.823vw 110px;
+    margin:0 auto;
+    min-height:600px;
+    margin-top:100px;
+}
+
+
+/* 탐색경로바 */
+.path { overflow:hidden; height:30px; line-height:30px; padding:0 2.29vw; *zoom:1;}
+.path p {display:inline-block; margin-right:3px;}
+.path span { overflow:hidden; position:absolute; width:0; height:0; white-space:nowrap; text-indent:100%; }
+/*.path ol { float:right; }*/
+.path li { float:left; /*padding:0 0 0 12px;*/ margin:0 0 0 8px; color:#000; /*background:url("//img.echosting.cafe24.com/skin/base/layout/ico_path.gif") no-repeat 0 10px;font-size:15px;*/ }
+.path li:first-child { background:none;padding:0; margin:0; }
+.path li a { color:#000; font-size:15px;}
+.path li strong,
+.path li strong a { color:#000; font-size:15px;}
+.path a:hover {text-decoration:none;}
+
+/* 공통타이틀 */
+.titleArea {text-align:center; margin:0 auto; margin-bottom:55px;}
+.titleArea h2 {font-size:20px; font-weight:400;}

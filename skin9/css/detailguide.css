@@ -1,0 +1,45 @@
+#detailguide {display:none;font-size:0.9rem; line-height:1.6; letter-spacing:0; border-bottom:1px solid #000;margin-top:44px; word-break:keep-all;}
+
+#detailguide .inner {/*border-bottom:1px solid #eaeaea; */padding:20px 0; font-size:.8rem; line-height:1.2rem; font-weight:400; }
+#detailguide .accordion-label {
+    display: block;
+    font-size: .93rem;
+    text-transform:uppercase;
+    line-height: 1em;
+    padding: 12px 2px;
+    position: relative;
+    text-decoration: none;
+    border-top:1px solid #000;
+}
+
+#detailguide .accordion-label:after {
+    background: transparent url(https://nutexturekr.cafe24.com/web/upload/fd/arrow-down.png) center center no-repeat;
+    background-size: 100%;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 12px;
+    right: 18px;
+    top: 0;
+    width: 15px;
+}
+
+#detailguide .accordion-label.ui-state-active:after {
+    background: transparent url(https://nutexturekr.cafe24.com/web/upload/fd/arrow-up.png) center center no-repeat;
+}
+
+
+textarea:focus, input:focus {
+    outline: none;
+    outline-style:none;
+    box-shadow:none;
+    border-color:transparent;
+}
+:focus {
+    outline: none;
+    outline-style:none;
+    box-shadow:none;
+    border-color:transparent;
+}

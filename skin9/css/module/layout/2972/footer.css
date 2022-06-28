@@ -1,0 +1,9 @@
+.xans-layout-footer {  }
+.xans-layout-footer .utilMenu {}
+.xans-layout-footer .utilMenu li {  line-height:18px; }
+.xans-layout-footer .utilMenu li a { color:#fff; }
+.xans-layout-footer .address { color:#fff; line-height:18px; }
+.xans-layout-footer .address span {position:relative;padding:0 5px;font-family:'Noto Sans KR',sans-serif; font-size:10px; font-weight:200 }
+.xans-layout-footer .address span a { color:#fff; text-decoration:underline; }
+.xans-layout-footer .copyright {font-weight:700; font-size:10px; }
+.xans-layout-footer .pageTop { position:absolute; right:0; top:10px; }

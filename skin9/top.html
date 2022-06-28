@@ -1,0 +1,96 @@
+<!--@css(/css/top.css)-->
+<!--@js(/js/top.js)-->
+<!--@js(/js/fd-comm.js)-->
+<!--@css(/css/fd-comm.css)-->
+
+<div id='top_banner'>
+    <!-- <a href='링크 주소 입력'> -->
+    <a href='https://www.nutexture.com/board/free/read.html?no=311&board_no=2' class='gro flex-center'>소프트닝 코튼 론칭 기념 25매입 코튼 무료 증정</a>
+    <a href='http://pf.kakao.com/_HxaxjTb' class='gro flex-center'>카카오 채널톡 친구 추가 시, 3,000원 할인 쿠폰 즉시 발급</a>
+    <a href='https://www.nutexture.com/board/free/read.html?no=130&board_no=2' class='gro flex-center'>신규 회원 가입 시 첫 구매 15% OFF 쿠폰 발급</a>
+</div>
+
+<div class="inner ridi flex-between">
+    
+    <div class='left-cont cont'>
+        <div class="logo b-logo" df-banner-code="logo" hidden>
+            <a href="{#href}" target="{#target}" df-banner-clone>{#item}</a>
+        </div>
+        <div class="logo w-logo" df-banner-code="w-logo" hidden>
+            <a href="{#href}" target="{#target}" df-banner-clone>{#item}</a>
+        </div>
+
+        <div id="menubar">
+            <nav>
+                <div class="container">
+                    <ul>
+                        <!-- ★온라인스토어를 제외한 메뉴는 수동으로 관리합니다★ -->
+                        <!-- 온라인스토어(상품판매메뉴)는 상품관리의 메뉴와 연동되어 나타납니다 -->
+
+                        <li class='shop_show gro'><a class="gro" href="/product/list.html?cate_no=23"><span>SHOP</span></a></li>
+                        <li><a class="gro" href="/story.html">BRAND STORY</a></li>
+                        <li><a class="gro" href="/methodology.html">METHODOLOGY</a></li>
+                    </ul>    
+                </div>
+            </nav>
+        </div>
+    </div>
+    
+    
+    <div class='right-cont cont'>                
+        <!-- 멀티쇼핑몰 -->
+        <div module="Layout_multishopList" class="list">
+            <button type="button" class="toggle">
+                <span class='gro'>
+                    KR
+                    <i class='xi-angle-down-min'></i>
+                </span>
+            </button>
+            <ul module="Layout_multishopListitem">
+                <li>
+                    <a href="https://nutexture.com/">
+                        <span class="name gro">KR</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://en.nutexture.com/">
+                        <span class="name gro">EN</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        
+        <!-- 검색 -->
+        <li id="topsearch">
+            <div class="search-bar">
+                <div module="Layout_SearchHeader">
+                    <!--
+                    $product_page=/product/detail.html
+                    $category_page=/product/list.html
+                    -->
+                    <fieldset id="search_fieldset">{$form.keyword}
+                        <!-- <a onclick="{$action_search_submit}" class="search-tit gro">SEARCH</a> -->
+                        <a class="search-tit gro">SEARCH</a>
+                    </fieldset>
+                </div> 
+            </div>
+        </li>
+
+        <!-- 로그인/로그아웃 메뉴 -->
+        <div id="log" module="Layout_stateLogoff" class='account_show user-menu gro'>
+            <a href='/myshop/index.html'>ACCOUNT</a>
+        </div>
+        <div id="log" module="Layout_stateLogon" class='account_show user-menu gro'>
+            <a href='/myshop/index.html'>ACCOUNT</a>
+        </div>  
+        
+        <!-- 장바구니 -->
+        <div module="Layout_orderBasketcount" style="cursor:pointer;" onclick="location.href='/order/basket.html'" id="topcarticon" class='gro'>
+            <a>CART<!--({$basket_count})--></a>
+        </div>
+    
+    </div>
+</div>
+
+<!--@import(/nutexture/fd-top-menu.html)-->

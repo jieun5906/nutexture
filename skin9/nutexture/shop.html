@@ -1,0 +1,42 @@
+<!--@layout(/layout-list.html)-->
+<!--@css(/css/fdproduct.css)-->
+<!--@css(/css/module/product/listnormal.css)-->
+<!--@js(/js/subcate.js)-->
+
+<style>
+    #bottom-wrap {margin-top:0 !important;}
+</style>
+
+<!--
+
+아래 페이지는 메인 인트로에서 section1 클릭시 이동되는 페이지입니다
+상품관리 > 메인상품진열관리에 등록하신 추천상품/신상품 메뉴가 노출됩니다
+노출되는 상품 갯수 수정을 원하실 경우 count 옆 숫자를 조정해 주세요
+
+-->
+
+<div module="product_listmain_2" class="fdlist">
+    <div id="catetitle" style="margin-bottom:55px"><h2>New Arrival</h2></div>
+
+    <!--
+    $count = 4
+    -->
+    <ul class="grid4">
+        <!--@import(/prdlist.html)-->
+        <!--@import(/prdlist.html)-->
+    </ul>
+</div>
+
+<div module="product_listmain_1" class="fdlist">
+    <div id="catetitle" style="margin-top:50px; margin-bottom:55px"><h2>Best Item</h2></div>
+
+    <!--
+    $count = 20
+    -->
+    <ul class="grid4">
+        <!--@import(/prdlist.html)-->
+        <!--@import(/prdlist.html)-->
+    </ul>
+</div>
+
+

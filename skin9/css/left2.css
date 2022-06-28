@@ -1,0 +1,42 @@
+#leftmenu {width:200px}
+.fixmenu2 { z-index:9; position:fixed; top:150px; width:200px;}
+#leftmenuwrap {position: absolute; left: 50px; top: 0; padding-bottom:100px; width:200px;}
+
+
+#leftinner { font-family: 'Montserrat', sans-serif; font-size:13px; line-height:20px;}
+#leftinner a {text-decoration:none; transition-duration: 0.3s;}
+#leftinner a:hover{text-decoration:none; transition-duration: 0.3s;}
+#leftinner .title {line-height:30px; color:#000; }
+#leftinner .sub { padding:0; line-height:20px; font-size:11px;}
+#leftinner .sub a {color:#787878;}
+#leftinner .sub a:hover {color:#000;}
+#leftinner ul {margin-bottom:19px}
+
+
+#menuall span {
+  position: relative;
+  text-decoration: none;
+}
+
+#menuall span:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -5px;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.17s ease-in-out 0s;
+  transition: all 0.17s ease-in-out 0s;
+}
+
+
+#menuall span:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+

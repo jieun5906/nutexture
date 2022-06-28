@@ -1,0 +1,96 @@
+<!--@layout(/layout.html)-->
+<!--@js(/js/fd.listhover.js)-->
+<!--@css(/css/fd-comm.css)-->
+<!--@0js(/js/scrolloverflow.min.js)-->
+
+<div id="fd-main">
+	<!-- section1 -->
+    <div class="section" id="section1" df-banner-code="main" hidden>
+        <div class='section1-img' df-banner-clone>
+            <a href="{#href}" target="{#target}">{#item}</a>
+        </div>
+        <div class='main-txt-wrap noto'>
+        		<p class='sub-txt'>싱그러운 만다린 향이 기분 좋은</p>
+            <p class='main-txt'>하이드레이팅 젤 클렌저</p>
+            <button type='button' class='comm-btn noto'>
+                <a href='/product/detail.html?product_no=9&cate_no=23&display_group=1'>
+                    제품 보기
+                </a>
+            </button>
+        </div>
+    </div>
+    <!-- //section1 -->
+    
+    <!-- section2 -->
+    <div class="section comm-pad" id="section2">   
+        <div class='section-left'>
+        	<div class='main-txt-wrap'>
+            	<p class='sub-txt gro-b'>THE FORMULA HOUSE</p>
+            	<p class='main-txt noto'>누텍스처, 더 포뮬러 하우스</p>
+            </div>
+        </div>
+        <div class='section-right'>
+        	<div class='main-txt-wrap'>
+            	<p class='main-txt noto'>누텍스처는 최상의 포뮬러를 창조하는 <br>스킨케어 하우스입니다.</p>
+                <p class='sub-txt noto'>
+                    효과적이면서 감각적인 스킨케어 경험을 제공하기 위해 누텍스처의 모든 제품은 최상의 포뮬러를 만들기 위한 고집으로 창조되며, 스킨케어라는 일상의 루틴이 새로운 경험이 될 수 있도록 모든 미학적인 요소를 정제합니다. 
+                    <br><br>미니멀한 디자인의 비주얼에 담긴 센슈얼한 제형의 제품들은 이전에 없던 새로운 스킨케어 경험을 선사합니다.
+                </p>
+            </div>
+            <button type='button' class='comm-btn noto'>
+                <a href='/product/list.html?cate_no=29'>더 알아보기</a>
+            </button>
+        </div>
+    </div>
+    <!-- //section2 -->
+    
+    <!-- section3 -->
+	<div class="section comm-pad" id="section3">
+		<!-- 메인진열 일반타입 -->
+        <div class="main_prd main_prd2">
+            <div module="product_listmain_1" class="ec-base-product">
+                <!--
+                $count = 4
+                ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+                ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+                $basket_result = /product/add_basket.html
+                $basket_option = /product/basket_option.html
+                -->
+                <div class="title">
+                    <h2>
+                        <span class='tit gro-b' style="display: {$category_title_text_display};">{$category_title_text}</span>
+                        <span style="display: {$category_title_img_display};"><img src="{$category_title_img}" alt="{$category_title_text}" /></span>
+                    </h2>
+                </div>
+                <ul class="prdList grid4">
+                    <!--@import(/nutexture/prd_list_normal.html)-->
+                </ul>
+            </div>
+        </div>
+	</div>
+    <!-- //section3 -->
+    
+    <!-- section4 -->
+	<div class="section comm-pad" id="section4">
+        <div class="ec-base-product">
+            <div class="title"><h2><span class='tit gro-b'>BEST SELLER</span></h2></div>
+            <div class='main-wrap'>
+                <div class='main-item' df-banner-code="pc-best-seller01" hidden>
+                    <div df-banner-clone>
+                        <a href="{#href}">{#item}</a>
+                    </div>
+                    <div class='main-txt-wrap noto'>
+                        <p class='main-txt gro-b'>COMFORTING CREAM</p>
+                        <p class='sub-txt'>부드럽고 풍부한 크림 제형이 탄탄한 보습막을 형성해<br>건조한 피부를 편안하고 촉촉하게 케어해주는 고보습 너리싱 크림</p>
+                        <button type='button' class='comm-btn noto'>
+                            <a href='/product/detail.html?product_no=11&cate_no=23&display_group=1'>
+                                제품 보기
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>            
+		</div>
+	</div>
+	<!-- //section4 -->
+</div>

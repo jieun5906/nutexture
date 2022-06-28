@@ -1,0 +1,141 @@
+<!--@css(/css/bottom.css)-->
+<div module="Layout_footer" class="inner xans-element- xans-layout xans-layout-footer">
+
+    <!-- <div class="copypadding">
+        
+        <div class="logo">
+            <a href="/"><img src="/web/upload/fd/logo.png"></a>
+        </div>
+        
+    </div> -->
+    
+    <div class="fd-bot">
+    	<ul id="utilMenu">
+        	<li><a href="/index.html">홈</a></li>
+            <li><a href="/member/agreement.html">이용약관</a></li>
+            <li><a href="/member/privacy.html">개인정보취급방침</a></li>
+        </ul>
+    </div>
+
+    <div class='fd-inner dream'>
+
+        <!-- 고객센터번호/계좌 -->
+        <div id="cscenter" class="fd-bot">
+
+            <div id="customer">
+                <ul>
+                    <li class='bot-tit ridi'>CUSTOMER CENTER</li>
+                    <li class="cs1">{$phone}</li>
+                    <li class="cs2">월-금 09:30-17:00</li>
+                    <li class="cs2">LUNCH 12:00-13:30</li>
+                    <li class="cs2">토,일요일 및 공휴일 휴무</li>
+                    <li class="cs2 ridi"><a href="mailto:maylithm@gmail.com">EMAIL : maylithm@naver.com</a></li>
+                </ul>
+            </div>
+
+        </div>        
+        
+        <div class='fd-bot'>
+            <div id="bank">
+                <ul>
+                    <li class='bot-tit ridi'>BANK INFO</li>
+                    <li class="bank1">하나은행 121-890069-80205</li>
+                    <li class="bank2">예금주 : (주)코스모</li>
+                </ul>
+            </div>
+            <div id="delivery">
+                <ul>
+                    <li class='bot-tit ridi'>DELIVERY</li>
+                    <li class="bank1"><a href='https://www.hanjin.co.kr/kor/CMS/DeliveryMgr/WaybillSch.do?mCode=MN038'>한진택배</a></li>
+                    <li class="bank2">반품주소지 : 광주광역시 북구 삼소로270번길 36 (월출동)(주)코스모 메이리듬 반품 담당자 앞</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SNS, 기타링크 (SNS주소는 별도 파일관리 > 매뉴얼참고) -->
+        <div id="link" class="fd-bot">
+
+            <!-- <ul>
+                <li><a href=/shopinfo/company.html>Company</a></li>
+                <li><a href=/member/agreement.html>Agreement</a></li>
+                <li><a href=/member/privacy.html>Privacy policy</a></li>
+                <li><a href=/shopinfo/guide.html>Site guide</a></li>
+                <li><a href="http://www.ftc.go.kr/info/bizinfo/communicationList.jsp" target="_blank">Business license</a></li>
+            </ul> -->
+
+            <!-- SNS아이콘 -->
+            <!--div class="fd-bot">
+                <ul>
+                    <li class='bot-tit ridi'>INSTAGRAM</li>
+                    <li class='ridi'><a href='https://www.instagram.com/isfrom.official/'>@isfrom.official</a></li>
+                    <li class='ridi'><a href='https://www.instagram.com/isfrom.us/'>@isfrom.us</a></li>
+                    <!-- <li>
+                        <span style="margin-right:10px">Follow us</span>
+                        <img src="/web/upload/fd/sns/fb.png" style="cursor:pointer; height:20px" onclick="gogoNew(1)">
+                        <img src="/web/upload/fd/sns/kakao.png" style="cursor:pointer" onclick="gogoNew(2)">
+                    </li> -->
+                    <!-- <div style="clear:both"></div> 
+                </ul>
+            </div>-->
+
+        </div>
+        
+        <div id="account" class='fd-bot'>
+            <ul class='ridi' module="Layout_statelogoff">
+                <li class='bot-tit'>MY ACCOUNT</li>
+                <li><a href='/myshop/index.html'>MY PAGE</a></li>
+                <li><a href='/myshop/order/list.html'>MY ORDER</a></li>
+                <li><a href='/member/login.html'>LOGIN</a></li>
+                <li><a href='/member/join.html'>JOIN US</a></li>
+            </ul>
+            <ul class='ridi' module="Layout_stateLogon">
+                <li class='bot-tit'>MY ACCOUNT</li>
+                <li><a href='/myshop/index.html'>MY PAGE</a></li>
+                <li><a href='/myshop/order/list.html'>MY ORDER</a></li>
+                <li><a href='/myshop/mileage/historyList.html'>MY MEMBERSHIP</a></li>
+                <li><a href='{$action_logout}'>LOGOUT</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <!-- 회사정보 -->
+    <div id="company" class="fd-bot-company dream">
+        <ul>
+            <li class='ridi'><span>COSMO</span></li>
+        </ul>
+        <ul>
+            <li class="copytext"><span>상호명 : </span>{$company_name}</li> /
+            <li><span>대표자 :</span> {$president_name}</li>
+        </ul>
+        <ul>
+            <li><span>주소 :</span> {$mall_addr1}{$mall_addr2}</li>
+        </ul>
+        <ul>
+            <li><span>사업자등록번호 :</span> {$company_regno}</li> /
+            <li><span>통신판매업신고 :</span> {$network_regno} {$biz_no_link}</li>
+        </ul>
+        <ul>
+            <li><span>개인정보보호책임자 :</span> {$cpo_name}</li>
+        </ul>
+    </div>   
+    
+
+    <!-- 레지스터버튼 -->
+    <!-- <div class="copypadding2">
+        <div id="joinbt" onclick="location.href='/member/join.html'" style="cursor:pointer">Register</div>
+        <div style="clear:both"></div>
+    </div>
+    
+    <div style="clear:both"></div> -->
+
+
+    <!-- 하단카피라잇 부분 (가영구 디자인 카피라잇 부분(DESIGNED BY fd DESIGN) 삭제시 추후 무료 as 서비스가 불가능합니다 -->
+    <div id="bottomcopyright" class='ridi'>
+        <div style="float:left">Copyright (C) 2021 <b>COSMO</b> all rights reserved </div>
+        <!-- <div style="float:right; text-align:right;"><img src=/web/upload/fd/copy-logo.gif></div> -->
+        <div style="clear:both"></div>
+	</div>
+
+</div>

@@ -1,0 +1,5 @@
+.xans-board-movement {display:inline-block;}
+.xans-board-movement ul {display:inline-flex; align-items:center;}
+.xans-board-movement li {display:inline-block; margin-right:3px;}
+.xans-board-movement li:last-child {margin-right:0;}
+.xans-board-movement li a { width:860px; border-left:1px solid #e9e9e9; }

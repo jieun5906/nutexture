@@ -1,0 +1,129 @@
+<!-- 참고 : 뉴상품관리 전용 모듈입니다. 뉴상품관리 이외의 곳에서 사용하면 정상동작하지 않습니다. -->
+    <div class="productSet additional fd_detail_additional" module="product_addproduct">
+        <div class="title">
+            <h3 class='gro-b color000'>SET CONTAINS | 포함 상품</span></h3>
+            <!-- <a href="#self" class="toggle"><img src="//img.echosting.cafe24.com/skin/base/product/btn_additional_close.gif" alt="추가구성상품 닫기" /></a> -->
+        </div>
+        <ul class="product">
+            <li>
+                <div class="information">
+                    
+                    <!-- <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}">
+                        <img src="{$image_tiny}" id="{$image_tiny_id}" alt="{$seo_alt_tag}" />
+                        <img class='hoverImg' src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" />
+                        <span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span>
+                    </a> -->
+
+                    <div class="thumbnail">
+                        <a href="{$link_product_detail}">
+                            <!-- <img src="{$product_image}" alt="" id="{$image_id}" /> -->
+                            <img src="{$image_tiny}" id="{$image_tiny_id}" alt="{$seo_alt_tag}" />
+                            <img class='hoverImg' src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" />
+                        </a>
+                    </div>
+                    
+                    <div class='add_prd_info'>
+                        <p class="name" title="상품명"><strong>{$product_name}</strong></p>
+                        <p class="price gro {$product_price_del}" title="판매가">{$product_price}{$product_tax_type_text}</p>
+                        <p class="salePrice gro {$product_sale_price_display|display}" title="할인판매가">{$product_sale_price}</p>
+                    </div>
+                </div>
+                <!-- <ul class="option">
+                    <li module="product_addoption">
+                        <strong class="name">{$add_option_name}</strong>
+                        {$form.add_option}
+                        <span class="txtByte" title="현재글자수/최대글자수">(<strong class="length">0</strong>/{$option_maxlength})</span>
+                    </li>
+                    <li module="product_option">
+                        <ul>
+                            <li>
+                                <strong class="name">{$option_name}</strong>
+                                {$form.option}<p class="value">{$option_desc}</p>
+                            </li>
+                            <li module="product_quantity">
+                                <div class="ec-base-qty">
+                                    {$form.quantity}
+                                    <a href="javascript:;"><img src="//img.echosting.cafe24.com/skin/base/common/btn_quantity_up.gif" id="{$quantity_up_id}" alt="증가" class="up {$quantity_up_class}"></a>
+                                    <a href="javascript:;"><img src="//img.echosting.cafe24.com/skin/base/common/btn_quantity_down.gif" id="{$quantity_down_id}" alt="감소" class="down {$quantity_down_class}"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li module="product_noneoption">
+                        <ul>
+                            <li>
+                                <strong class="name">상품선택</strong>
+                                {$form.noneoption}
+                            </li>
+                            <li module="product_quantity">
+                                <div class="ec-base-qty">
+                                    {$form.quantity}
+                                    <a href="javascript:;"><img src="//img.echosting.cafe24.com/skin/base/common/btn_quantity_up.gif" id="{$quantity_up_id}" alt="증가" class="up {$quantity_up_class}"></a>
+                                    <a href="javascript:;"><img src="//img.echosting.cafe24.com/skin/base/common/btn_quantity_down.gif" id="{$quantity_down_id}" alt="감소" class="down {$quantity_down_class}"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="{$add_option_push_button_display|display} selectButton" id="{$add_option_push_button_id}">
+                        <a href="#none" onclick="{$add_action_push_button}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/product/btn_manual_select.gif" alt="옵션 선택" /></a>
+                    </li>
+                </ul> -->
+            </li>
+            <li>
+                <div class="information">
+                    <div class="thumbnail">
+                        <a href="{$link_product_detail}">
+                            <!-- <img src="{$product_image}" alt="" id="{$image_id}" /> -->
+                            <img src="{$image_tiny}" id="{$image_tiny_id}" alt="{$seo_alt_tag}" />
+                            <img class='hoverImg' src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" />
+                        </a>
+                    </div>
+                    <div class='add_prd_info'>
+                        <p class="name" title="상품명"><strong>{$product_name}</strong></p>
+                        <p class="price gro {$product_price_del}" title="판매가">{$product_price}{$product_tax_type_text}</p>
+                        <p class="salePrice gro {$product_sale_price_display|display}" title="할인판매가">{$product_sale_price}</p>
+                    </div>
+                </div>
+                <!-- <ul class="option">
+                    <li module="product_addoption">
+                        <strong class="name">{$add_option_name}</strong>
+                        {$form.add_option}
+                        <span class="txtByte" title="현재글자수/최대글자수">(<strong class="length">0</strong>/{$option_maxlength})</span>
+                    </li>
+                    <li module="product_option">
+                        <ul>
+                            <li>
+                                <strong class="name">{$option_name}</strong>
+                                {$form.option}<p class="value">{$option_desc}</p>
+                            </li>
+                            <li module="product_quantity">
+                                <div class="ec-base-qty">
+                                    {$form.quantity}
+                                    <a href="javascript:;"><img src="//img.echosting.cafe24.com/skin/base/common/btn_quantity_up.gif" id="{$quantity_up_id}" alt="증가" class="up {$quantity_up_class}"></a>
+                                    <a href="javascript:;"><img src="//img.echosting.cafe24.com/skin/base/common/btn_quantity_down.gif" id="{$quantity_down_id}" alt="감소" class="down {$quantity_down_class}"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li module="product_noneoption">
+                        <ul>
+                            <li>
+                                <strong class="name">상품선택</strong>
+                                {$form.noneoption}
+                            </li>
+                            <li module="product_quantity">
+                                <div class="ec-base-qty">
+                                    {$form.quantity}
+                                    <a href="javascript:;"><img src="//img.echosting.cafe24.com/skin/base/common/btn_quantity_up.gif" id="{$quantity_up_id}" alt="증가" class="up {$quantity_up_class}"></a>
+                                    <a href="javascript:;"><img src="//img.echosting.cafe24.com/skin/base/common/btn_quantity_down.gif" id="{$quantity_down_id}" alt="감소" class="down {$quantity_down_class}"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="{$add_option_push_button_display|display} selectButton" id="{$add_option_push_button_id}">
+                        <a href="#none" onclick="{$add_action_push_button}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/product/btn_manual_select.gif" alt="옵션 선택" /></a>
+                    </li>
+                </ul> -->
+            </li>
+        </ul>
+    </div><!-- //참고 -->

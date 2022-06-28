@@ -1,0 +1,51 @@
+
+/* 상품진열 기본 CSS */
+
+#fdimg2 {z-index:10; /*position:absolute; left:0px; top:0px;*/ opacity:0; -webkit-transition-duration: 0.3s; transition-duration: 0.3s;}
+#fdimg2:hover { opacity:1; -webkit-transition-duration: 0.3s; transition-duration: 0.3s;}
+.fd-prd-list-item:hover .info {display:block;}
+
+.fdlist .prdpadding {height:100%; margin:2px; position:relative; } /* 상품들간의 간격 */
+.fdlist .prdline {display:block; height:100%; margin-bottom:0;} /* 상품이미지 아래 상품명과의 간격 */
+
+.fdlist {margin:0 auto; }
+.fdlist ul { zoom:1; width:100%; margin-bottom:0;  display: table; font-size:0;}
+.fdlist ul a:link {text-decoration:none;}
+.fdlist ul a:hover {text-decoration:none; color:#000;}
+.fdlist ul:after {content:""; display:block; clear:both; }
+
+.fdlist ul li { display: inline-block; vertical-align:top;}
+
+.fdlist ul.grid2 > li { display: inline-block; width:50%; text-align:center; vertical-align:top;}
+.fdlist ul.grid3 > li { display: inline-block; width:33.33%; text-align:center; vertical-align:top;}
+.fdlist ul.grid4 > li { display: inline-block; width:25%; /*height:670px;*/ text-align:center; vertical-align:top;}
+.fdlist ul.grid5 > li { display: inline-block; width:20%; text-align:center; vertical-align:top;}
+
+.fdlist ul.grid4 > li a {position:relative;}
+.fdlist ul.grid4 .fd-prd-cont > div {position:absolute !important; top:0; left:0; width:100%; height:100%;}
+.fdlist ul.grid4 .fd-prd-cont > div #fdimg2 {width:100%; height:100%;}
+
+.fdlist ul.grid4 > li .prdline a {width:100%; height:100%; object-fit:cover;}
+.fdlist ul.grid4 > li .prdline img {width:100%; height:100%; max-height:665px; object-fit:cover;}
+
+/* 상품정보 디자인 CSS */
+.fdlist .spec {position:absolute; bottom:38px; left:23px; text-align:left; z-index:11; pointer-events:none;}
+.fdlist .name {clear:both; font-size:15px; }
+.fdlist .name span {color:#000!important; font-size:15px!important; font-weight:700;}
+.fdlist .name a {color:#000}
+.fdlist .icon img {margin-bottom:7px; margin-right:5px }
+.fdlist .prices {line-height:21px; color:#000; font-size:15px; margin-top:6px;}
+.fdlist .price { font-size:15px; color:#000; margin-right:2px; }
+.fdlist .prices .normal > i {color:#000; font-size:17px;}
+.fdlist .normal { font-size:15px; color:#727272; }
+.fdlist .sale {font-size:15px; color:#000; }
+.fdlist .info { margin-top:5px; line-height:21px; font-size:15px; color:#000; display:none;}
+
+/*.fdlist .colorWrap {height:19px}*/
+
+/* 컬러칩 CSS */
+
+.fdlist .color { padding-top:7px; text-align:right;}
+.fdlist .color ul { display: inline-block; text-align:right; margin: 0; padding: 0; zoom:1; *display: inline;}
+.fdlist .color li {padding:0;}
+.fdlist .chips { width:8px; height:8px; margin-left:5px; font-size:0; line-height:0; }

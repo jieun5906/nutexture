@@ -1,0 +1,48 @@
+#leftmenu {width:200px}
+.fixmenu2 { z-index:9; position:fixed; top:150px; width:200px;}
+#leftmenuwrap {position: absolute; left: 50px; top: 0; padding-bottom:100px; width:200px;}
+
+#menuall_wrap { font-size:13px; line-height:20px; margin-top:-10px}
+#menuall_wrap a {text-decoration:none; transition-duration: 0.3s;}
+#menuall_wrap a:hover{text-decoration:none; transition-duration: 0.3s;}
+
+#menuall {}
+
+.menuall_submenu { }
+.menuall_submenu ol { list-style:none; }
+.menuall_submenu ol > li { width: 100%; margin-bottom:15px; line-height:30px; display:inline-block; padding:0; vertical-align:top; }
+.menuall_submenu ol > li a {color:#000}
+.menuall_submenu ol > li > ul { padding:0; line-height:20px; font-size:11px;}
+.menuall_submenu ol > li > ul a {color:#787878;}
+.menuall_submenu ol > li > ul a:hover {color:#000;}
+
+
+
+
+#menuall span {
+  position: relative;
+  text-decoration: none;
+}
+
+#menuall span:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -5px;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.17s ease-in-out 0s;
+  transition: all 0.17s ease-in-out 0s;
+}
+
+
+#menuall span:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+

@@ -1,0 +1,141 @@
+#top {position:fixed; z-index:99; width:100%; left:0; top:0; font-size:14px; height:20px; line-height:20px; color:#000; -webkit-transition-duration: 0.3; transition-duration: 0.3s;}
+#top.active {height:20px; background-color:transparent; -webkit-transition-duration: 0.3; transition-duration: 0.3s;}
+#top a {text-decoration:none;}
+#top a:hover {text-decoration:none; font-weight:bold;}
+#top a:hover span {text-decoration:none; font-weight:bold;}
+#top .inner {margin:0 auto; padding:28px 44px 26px;}
+#top .inner .cont {display:flex; align-items:center; font-size:14px;}
+
+/* logo */
+#top #logo {float:left; margin-right:80px; margin-top:-8px}
+#top .logo {display:inline-block;}
+#top .w-logo {display:none;}
+#top .logo img {width:150px; image-rendering:-webkit-optimize-contrast;}
+
+#top #topsearch .search-bar {margin:0 0 0 25px; padding:0;}
+#top #topsearch .search-bar img { cursor:pointer; margin-left:3px; height:16px}
+#top #topsearch .search-bar input[type=text] {height:20px; padding:0; font-size:12px; color:#000; width:0; margin-right:10px; border:none; border-bottom:1px solid #000; background:transparent; -webkit-transition-duration: 0.3s; transition-duration: 0.3s;}
+#top #topsearch .search-bar input[type=text]:focus {outline: none;}
+#top #topsearch .search-bar:hover {cursor:pointer;}
+#top #topsearch.active .search-bar input[type=text] {height:20px; padding:0; font-size:11px; color:#000; width:100px; border:none; border-bottom:1px solid #000; -webkit-transition-duration: 0.3s; transition-duration: 0.3s;}
+
+#top #log {font-size:14px; margin-left:25px; cursor:pointer;}
+
+#top #topcarticon {font-size:14px; margin-left:25px;}
+/* 멀티쇼핑몰 */
+#top .xans-layout-multishoplist.list { float:right; position:relative; z-index:10; height:19px; margin-top:0;}
+#top .xans-layout-multishoplist.list span {display:flex; align-items:center; font-size:14px;}
+#top .xans-layout-multishoplist.list span > i {font-size:16px; color:#000; margin-left:3px; transition:.3s;}
+#top .xans-layout-multishoplist.list .toggle { display:block; height:19px; padding:0; color:#000; line-height:19px;background:transparent }
+#top .xans-layout-multishoplist.list .toggle span:hover {font-weight:bold;}
+#top .xans-layout-multishoplist.list .toggle span > img { vertical-align:middle; width:9px; height:6px; padding-left:10px;}
+#top .xans-layout-multishoplist.list > ul { display:none; position:absolute; left:0; top:25px; overflow:auto;}
+#top .xans-layout-multishoplist.list > ul li { position:relative; height:25px; line-height:30px; overflow:hidden;}
+#top .xans-layout-multishoplist.list > ul li:hover a {text-decoration:underline;}
+#top .xans-layout-multishoplist.list > ul li a { display:block; /*padding:0 0 0 18px;*/ color:#000; white-space:nowrap; text-decoration:none; text-overflow:ellipsis; }
+#top .xans-layout-multishoplist.list > ul li a span {margin-right:10px;}
+#top .xans-layout-multishoplist.list > ul li.selected a { background:#f3f3f3}
+#top .xans-layout-multishoplist.list > ul li a img {height:12px; position:absolute; left:0; top:9px; }
+#top .xans-layout-multishoplist.list > ul li a .name strong {  }
+#top .xans-layout-multishoplist.list > ul li a .unit { position:absolute; right:38px; top:0; color:#000; }
+#top .xans-layout-multishoplist.list.show > ul { display:block; }
+#top .xans-layout-multishoplist.list.show span > i {transform:rotate(180deg);}
+
+
+/* 호버시 메뉴바 노출 */
+#top.active .w-logo {display:block;}
+#top.active .b-logo {display:none;}
+#top.active a {color:#fff;}
+#top.active #topsearch .search-bar input[type=text] {border-bottom:1px solid #fff; color:#fff; transition:all .3s ease-out;}
+#top.active .xans-layout-multishoplist.list > ul li a span,
+#top.active .xans-layout-multishoplist.list .toggle span,
+#top.active .xans-layout-multishoplist.list .toggle span i {color:#fff;}
+#top.shop_active .top_menu_cont .shop_menu {display:flex;}
+#top.account_active .top_menu_cont .account_menu {display:flex;}
+#top.active .top_menu_cont {opacity:1; transition:opacity .3s ease-out; pointer-events:auto;}
+#top .inner.active {background-color:#fff; /*-webkit-transition-duration: 0.3; transition-duration: 0.3s;*/}
+
+.top_menu_cont {/*display:none;*/ background:#000; padding:197px 0 87px; position:absolute; width:100%; top:0; z-index:-1; opacity:0; transition:opacity .3s ease-in; pointer-events:none;}
+
+.top_menu_cont .shop_menu {display:none; align-items:flex-start; justify-content:space-between; padding:0 4.948vw; box-sizing:border-box;}
+.top_menu_cont .shop_menu > ul {width:14.583vw;}
+.top_menu_cont .shop_menu > ul h3 {color:#fff; font-family:'basis-grotesque-regular',sans-serif; font-weight:400; padding-bottom:10px; margin-bottom:10px; border-bottom:1px solid #C4C4C4;}
+.top_menu_cont .shop_menu > ul li {margin-bottom:10px;}
+.top_menu_cont .shop_menu > ul li:last-child {margin-bottom:0;}
+.top_menu_cont .shop_menu > ul li a {color:#fff; font-family:'basis-grotesque-regular',sans-serif; font-size:15px;}   
+
+.top_menu_cont .account_menu {display:none; align-items:flex-start; justify-content:flex-end; padding: 0 12.344vw; box-sizing:border-box;}
+.top_menu_cont .account_menu ul.dep1 {margin-right:22px;}
+.top_menu_cont .account_menu ul li {margin-bottom:7px; width:130px;}
+.top_menu_cont .account_menu ul li:last-child {margin-bottom:0;}
+.top_menu_cont .account_menu ul li a {color:#fff; font-size:15px; font-weight:300;}
+
+
+
+#menubar span {
+  position: relative;
+  text-decoration: none;
+  font-weight:400;
+}
+
+#menubar span:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+.postion { text-align: left;}
+.postion ul {display: inline-block; margin: 0; padding: 0; /* For IE, the outcast */ zoom:1;*display: inline;}
+
+#menubar nav ul {
+  margin:5px 0 0 40px;
+  padding: 0;
+}
+
+#menubar nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+#menubar nav ul li a {
+  color: #000;
+  display: block;
+  font-size: 14px;
+  margin-right:25px;
+  z-index:101;
+}
+
+#menubar nav ul li:hover {  }
+
+
+
+/*#menubar nav ul li ul {
+  display: none;
+  position: absolute;
+  text-align:left;
+  padding:10px 0 5px 0;
+  z-index:100;
+  opacity:1.0;
+  transition-duration: 0.3s;
+  width:150px;
+}
+
+#menubar nav ul li ul li {
+  display: block;
+  background:#fff;
+  padding-left:15px;
+  margin-left:-15px;
+}
+#menubar nav ul li ul li:last-child {padding-bottom:5px}
+#menubar nav ul li ul li a {
+  color:#000
+}
+
+#menubar nav ul li ul li a {
+  display: block;
+  padding: 3px 0;
+  font-size: 12px;
+  line-height:16px;
+  width:130px;
+}*/

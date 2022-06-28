@@ -1,0 +1,66 @@
+<!--@layout(/layout.html)-->
+<!--@css(/css/collection.css)-->
+<!--@css(/css/module/product/listnormal.css)-->
+<!--@js(/js/subcate.js)-->
+<div style="margin-top:150px; margin-left:25px; margin-right:25px">
+    <div module="Product_menupackage">
+        <!-- <div module="product_headcategory" id="catetitle"><h2>{$title_text}</h2></div> -->
+        <div class="menuCategory" id="subcate">
+            <ul class="menuCategory" module="product_displaycategory"  style="display:{$display};">
+                <li><a href="/collection.html?{$param_cate_no}">{$category_name}</a></li>
+                <li><a href="/collection.html?{$param_cate_no}">{$category_name}</a></li>
+                <li><a href="/collection.html?{$param_cate_no}">{$category_name}</a></li>
+            </ul>
+        </div> 
+    </div>
+
+    <!-- 상단 제품 정보  -->
+    <div module="product_detail" style="display:none">
+        <!--@css(/css/module/product/detail.css)-->
+        <div class="detailArea">
+            <!-- 이미지 영역 -->
+            <div class="imgArea" module="product_image">
+                <div class="keyImg" style="float:left; width:87%"><img src="{$big_img}" alt="{$seo_alt_tag}" class="{$big_img_class} {$img_display|display}" /></div>
+                <div class="listImg" style="float:right; width:13%">
+                    <div module="product_addimage" style="margin-left:7px">
+                        <ul>
+                            <li>{$add_img}</li>
+                            <li>{$add_img}</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+
+            <!-- 상세정보 내역 -->
+            <div style="width:47%; float:right">
+                <div style="margin-left:60px">
+                <!--@import(/detail_infoarea.html)-->
+                </div>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+
+        <div class="eventArea {$common_event_a|display}">
+            <h3><span>이벤트</span></h3>
+            <div class="event">{$common_event_a}</div>
+        </div>
+    </div><!-- //상단 제품 정보 -->
+
+
+    <div module="product_additional">
+        <!--@css(/css/module/product/additional.css)-->
+        <!--@css(/board/review/fdcss/photoreviewbutton.css)-->
+
+        <!-- DETAIL INFO -->
+        <div id="prdDetail">
+            <div id="prddetailimg" style="font-family: 'Montserrat', 'Nanum Gothic', sans-serif; ">{$product_detail}</div>
+        </div><!-- //DETAIL INFO -->
+
+
+    </div>
+    <!--@define(cmc_log)-->
+    
+</div>
+<div id="bottom-wrap"><div id="bottom"><!--@import(/bottom.html)--></div></div>
+    

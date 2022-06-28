@@ -1,0 +1,40 @@
+<!--@css(/css/left2.css)-->
+<!--@js(/js/left.js)-->
+<div id="leftmenuwrap">
+    <div id="leftmenu">
+        <div id="leftinner">
+            
+            <!--
+			메인/카테고리/상품상세 영역 외에서 왼쪽에 공통으로 노출되는 게시판/마이페이지 영역의 메뉴입니다
+			기본적으로 게시판 영역인 Notice~Review와 Event 메뉴만 수정, 그외 My page영역은 그대로 유지해 두시길 바랍니다 :)
+			-->
+            
+            <ul>
+                <li class="title">COMMUNITY</li>
+                <li class="sub"><a href="/board/memo/list.html?board_no=1001">SHOW_US</a></li>
+                <li class="sub"><a href="/collection.html?cate_no=45">WITH_US</a></li>
+                <li class="sub"><a href="/board/gallery/list.html?board_no=8">EVENT</a></li>
+            </ul>
+            
+            <ul>
+                <li class="title">DESK</li>
+                <li class="sub"><a href="/board/free/list.html?board_no=6">Q&amp;A</a></li>
+                <li class="sub"><a href="/board/free/list.html?board_no=3">FAQ</a></li>
+            </ul>
+            
+            <ul style="text-transform:uppercase">
+                <li class="title">My page</li>
+                <li class="sub" module="Layout_stateLogoff"><a href="/member/login.html">Login</a></li>
+                <li class="sub" module="Layout_stateLogoff"><a href="/member/join.html">Register</a></li>
+                <li class="sub" module="Layout_stateLogon"><a href="/member/modify.html">My info</a></li>
+                <li class="sub"><a href="/myshop/order/list.html">Order</a></li>
+                <li class="sub"><a href="/myshop/wish_list.html">Wish list</a></li>
+                <li class="sub"><a href="/myshop/mileage/historyList.html">Mileage</a></li> 
+                <li class="sub"><a href="/myshop/board_list.html">My board</a></li> 
+                <li class="sub"><a href=# style="cursor:pointer" onclick="gogoNew(0)">Delivery</a></li>
+            </ul>
+            
+        </div>
+    </div>
+</div>
+    

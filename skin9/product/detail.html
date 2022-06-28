@@ -1,0 +1,292 @@
+<!--@layout(/layout-detail.html)-->
+<!--
+    $category_page = /product/list.html
+    $project_page = /product/project.html
+    $jointbuy_page = /product/jointbuy.html
+-->
+<style>
+    #bottom-wrap {margin-top:0 !important;}
+</style>
+
+<!-- 상단 제품 정보  -->
+<div module="product_detail" class='fd-product-detail'>
+    <!--@css(/css/module/product/detail.css)-->
+    <!--@css(/board/review/ga09css/review.css)-->
+    <!--@css(/board/review/ga09css/jquery.bxslider.css)-->
+    <!--@0js(/board/review/ga09js/review.js)-->
+    <!--@0js(/board/review/ga09js/fd.review.js)-->
+    <!--@js(/js/jquery-ui.min.js)--> 
+
+
+    <!-- <div style="font-size:0; line-height:0;">
+        <input id="txtProductNo" type="hidden" value="{$product_no}" />
+        <div id="review_popup">
+            <div class="content"></div>
+        </div>
+    </div> -->
+    
+    <div class="detailArea">
+
+
+        <div class='detail-top'>
+            <!--@js(/js/module/product/product_image.js)-->
+            
+            <!-- 이미지 영역(상세좌측) -->
+            <div module="product_image" class='fd_detailImg_wrap'>
+                <div class='top-left'>
+                    <div class='left-thumbnail'>
+                        <img src="{$big_img}" alt="{$seo_alt_tag}" class="{$big_img_class} {$img_display|display}" />
+                    </div>
+                </div><!-- 이미지 영역닫기 -->
+
+                <div class='fd-mood-img'>
+                    <!-- 추가이미지 처리 -->
+                    <div class="listImg mood-img-cont" module="product_addimage">
+                        <ul>
+                            <li>{$add_img}</li>
+                            <li>{$add_img}</li>
+                            <li>{$add_img}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!-- 상세정보 우측 -->
+            <div id="detail-right" class='top-right'>
+                <div id="detailinfo" module='product_detail'>
+                <!--@js(/js/fd.prdbox.js)-->
+                <!--@import(/detail_infoarea.html)--> 
+                </div>
+            </div>
+            <!-- 상세정보 우측 -->
+            
+        </div>
+        
+        <!-- 포함상품 -->
+        <!--@import(/nutexture/detail_setPrd.html)-->
+
+        <div class='detail-bot'>
+            <!-- 추가이미지 아래 상품상세/관련상품/후기/문의 게시판 -->
+            <div module="product_additional">
+                <!--@css(/css/module/product/additional.css)-->
+                <!--@css(/board/review/fdcss/photoreviewbutton.css)-->
+
+                
+                <!-- 상품상세정보 -->
+                <div id="prdDetail">
+                        <div class="cont">
+                            {$product_detail}
+                        </div>
+                </div>
+                <!-- 상품상세정보 -->
+                
+            </div><!-- product_additional 모듈닫기 -->
+        </div>
+
+    </div><!-- detailArea 영역 -->    
+
+    
+    <div module="product_additional" class='fd-prd-botinfo bot-content'>
+        <div class='bot-info bot-info01'>
+            <div class='bot-info-top'>
+                <p class='it-left'>
+                    <span>더티 성분 리스트</span>
+                </p>
+                <i class='it-right xi-angle-down'></i>
+            </div>
+            <div class='bot-info-bot'>
+                <table class='bot-info-table'>
+                    <tr>
+                        <td>
+                            <!-- 더티리스트 -->
+                            <!--@import(/nutexture/detail_dirtyList.html)-->
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class='bot-info bot-info02' module="product_additional">
+            <div class='bot-info-top'>
+                <p class='it-left'>
+                    <span>상품정보</span>
+                </p>
+                <i class='it-right xi-angle-down'></i>
+            </div>
+            <div class='bot-info-bot'>
+                <table class='bot-info-table'>
+                    <tr>
+                        <td>{$service_info}</td>
+                    </tr>
+                </table>
+            </div>
+         </div>
+         <div class='bot-info bot-info03' module="mall_faq">
+            <div class='bot-info-top'>
+                <p class='it-left'>
+                    <span>배송 / 교환 / 반품 안내</span>
+                </p>
+                <i class='it-right xi-angle-down'></i>
+            </div>
+            <div class='bot-info-bot'>
+                <table class='bot-info-table'>
+                    <tr>
+                        <td>
+                            {$shipping_agreement}
+                            {$product_change_info}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class='bot-info bot-info04'>
+            <div class='bot-info-top'>
+                <p class='it-left'>
+                    <span>리뷰</span>
+                </p>
+                <i class='it-right xi-angle-up'></i>
+            </div>
+            <div class='bot-info-bot'>
+                <!--상품후기-->
+                <div class='bot-content bot-cont-review'>
+                    <div id="prdReview" class='fd-prd-review'>
+                        
+                        <div id="detailboardtext">
+                            <div class='fd-dr-write' style="text-align:right;" >
+                                <a href="{$review_write}">리뷰 작성하기</a>
+                            </div>
+                        </div>
+                        <!-- <p class="ec-base-button typeBorder review_btnTable">
+                            <span class="gRight revie_btnBox">
+                                <a href="{$review_write}">후기쓰기</a>
+                                <a href="{$review_list}">모두보기</a>
+                            </span>
+                        </p> -->
+
+                        <div class="board">  
+
+                            <div module="product_review">
+                                <!--@js(/js/module/product/review.js)-->
+                                <a name="use_review"></a>
+
+                                <p class="noAccess {$deny_display|display}">글읽기 권한이 없습니다.</p>
+
+                                <div class="minor {$adult_display|display}">
+                                    <p><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/product/ico_under19.gif" alt="" /> <strong>"19세 미만의 미성년자"</strong>는 출입을 금합니다!</p>
+                                    <p class="button"><a href="/intro/board.html{$returnParam}"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_adult_certification.gif" alt="성인인증 하기" /></a></p>
+                                </div>
+
+                                <div class="ec-base-table typeList">
+                                    <table border="1" summary="" class="{$list_display|display}">
+                                        <caption>상품사용후기</caption>
+                                        <colgroup>
+                                            <col style="width:70px;" />
+                                            <col style="width:auto" />
+                                            <col style="width:100px;" />
+                                            <col style="width:100px;" />
+                                            <col style="width:80px;" />
+                                            <col style="width:80px;" class="{$use_point_display|display}" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">번호</th>
+                                                <th scope="col">제목</th>
+                                                <th scope="col">작성자</th>
+                                                <th scope="col">작성일</th>
+                                                <th scope="col">조회</th>
+                                                <th scope="col" class="{$use_point_display|display}">평점</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="center">
+                                            <tr>
+                                                <td>{$no}</td>
+                                                <td class="subject left txtBreak">{$icon_re}{$icon_lock} <a href="{$link_board_detail}{$param_read}">{$subject}</a>{$icon_file}<span class="txtWarn">{$comment_count}</span></td>
+                                                <td>{$member_icon} {$writer}</td>
+                                                <td class="txtInfo txt11">{$write_date|date:Y-m-d}</td>
+                                                <td class="txtInfo txt11">{$hit_count}</td>
+                                                <td class="{$use_point_display|display}"><img src="http://img.echosting.cafe24.com/skin/base/board/ico_point{$point_count}.gif" alt="{$point_count}점"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>{$no}</td>
+                                                <td class="subject left txtBreak">{$icon_re}{$icon_lock} <a href="{$link_board_detail}{$param_read}">{$subject}</a>{$icon_file}<span class="txtWarn">{$comment_count}</span></td>
+                                                <td>{$member_icon} {$writer}</td>
+                                                <td class="txtInfo txt11">{$write_date|date:Y-m-d}</td>
+                                                <td class="txtInfo txt11">{$hit_count}</td>
+                                                <td class="{$use_point_display|display}"><img src="http://img.echosting.cafe24.com/skin/base/board/ico_point{$point_count}.gif" alt="{$point_count}점"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div module="product_reviewpaging" class="ec-base-paginate typeSub fd-paging">
+                                <a href="{$param_before}"><img src="/board/review/img/page_prev.gif" alt="이전 페이지" /></a>
+                                <ol>
+                                    <li><a href="{$param}"class="{$param_class}">{$no}</a></li>
+                                    <li><a href="{$param}"class="{$param_class}">{$no}</a></li>
+                                    <li><a href="{$param}"class="{$param_class}">{$no}</a></li>
+                                    <li><a href="{$param}"class="{$param_class}">{$no}</a></li>
+                                    <li><a href="{$param}"class="{$param_class}">{$no}</a></li>
+                                </ol>
+                                <a href="{$param_next}"><img src="/board/review/img/page_next.gif" alt="다음 페이지" /></a>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <!-- //상품 사용 후기 -->
+            </div>
+        </div>
+    </div>
+
+  </div>
+
+	<div class='fd-relative'>
+        <!-- 관련상품 -->
+        <div id="prdRelative">
+            <div module="product_relation" class="rollingprd fdswipe fd-rela-prd" style="visibility:hidden;">
+                <!--@js(/js/execute_swipe.js)-->
+                <!--
+                $count = 3
+                $swipe = yes
+                $line = 1
+                $grid = 3
+                -->
+                <p class='fd-rela-tit'>관련상품</p>
+                <ul class="grid3" module="product_relationlist">
+                    <li>
+                        <a href="/product/detail.html{$param}">
+                        	<div class="thumbnail"><img src="{$img}" alt="" /></div>
+                        	<div class="information">                            
+                                <div class='icon'>{$soldout_icon}</div>    
+                                <p class="name">{$name}</p>
+                                <p class="price gro {$product_sale_strike}" style="line-height:15px">{$disp_product_price}</p>
+                                <p class="price gro {$sale_price_display|display}" style="line-height:12px">{$disp_sale_price}</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/product/detail.html{$param}">
+                        	<div class="thumbnail"><img src="{$img}" alt="" /></div>
+                        	<div class="information">                            
+                                <div class='icon'>{$soldout_icon}</div>    
+                                <p class="name">{$name}</p>
+                                <p class="price gro {$product_sale_strike}" style="line-height:15px">{$disp_product_price}</p>
+                                <p class="price gro {$sale_price_display|display}" style="line-height:12px">{$disp_sale_price}</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 관련상품 -->
+        <div style="clear:both"></div>
+    </div>
+
+            
+    
+        
+    <div style="clear:both"></div>
+
+</div><!-- //상단 제품 정보 -->
+
+<!--@define(cmc_log)-->

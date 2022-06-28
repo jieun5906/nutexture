@@ -1,0 +1,44 @@
+<li id="anchorBoxId_{$product_no}">
+    <div class="prdpadding fd-prd-list-item">
+        <div class="prdline">
+            <a href="/product/detail.html{$param}" class='fd-prd-cont'>
+                <div style="position:relative;">
+                    <div id="fdimg2">
+                        <img src="{$image_small}" id="{$image_medium_id}" width=100% class=fdimg2 />
+                    </div>
+                </div>
+                <img src="{$image_tiny}" width=100% class=fdimg />
+            </a>
+        </div>
+        
+    	<div class='spec'>
+            <p class="icon">{$soldout_icon}{$stock_icon}{$recommend_icon}{$new_icon}{$product_icons}{$benefit_icons}</p>
+            <p class="name"><a href="/product/detail.html{$param}">{$product_name}</a></p>
+
+            <!-- <ul module="product_ListItem">
+                <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+            </ul> -->
+            <p class="info {$summary_desc|display}">{$summary_desc}</p>
+            <p class="prices gro">
+                <span class="price normal {$product_custom|display}">
+                    <strike>{$disp_product_custom}</strike>
+                    <i class='xi-long-arrow-right'></i>
+                </span>
+                <span class="price sale">{$disp_product_price}</span>
+            </p>
+            
+        </div>
+    	
+        <div class="colorWrap">
+            <div class="color {$colorchip_display|display}">
+                <div module="product_Colorchip">
+                    <ul>
+                        <li class="chips" style="background-color:{$color}"></li>
+                        <li class="chips" style="background-color:{$color}"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>

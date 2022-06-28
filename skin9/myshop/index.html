@@ -1,0 +1,205 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+<div class="fd_mypage_main">
+    <div class="path">
+        <span>현재 위치</span>
+        <ol>
+            <li><a href="/">홈</a></li>
+            <li title="현재 위치">마이 쇼핑</li>
+        </ol>
+    </div>
+
+    <div class="titleArea">
+        <h2 class='roboto'>내 정보 관리</h2>
+    </div>
+    <div class='container'>
+        <div class='left-cont'>
+            <div module="layout_logincheck">
+            <!--
+                $url = /member/login.html
+            -->
+            </div>
+        
+            <div module="myshop_benefit">
+                <!--@css(/css/module/myshop/benefit.css)-->
+                <div class="infoWrap">
+                    <div class="myInfo">
+                        <p class='logOut noto' module="Layout_stateLogon">
+                            <a href="{$action_logout}">
+                                로그아웃 <i class='xi-angle-right-min'></i>
+                            </a>
+                        </p>
+                        <p class='mem_info noto'><strong class="name noto">{$member_name}님</strong> 안녕하세요!</p>
+                    </div>
+                </div>
+            </div>
+            <div class='btn-box flex-between'>
+                <a href='/myshop/addr/list.html' class='btn-bg'>배송주소록 관리</a>
+                <a href='/member/modify.html' class='btn-bg'>회원정보 수정</a>
+            </div>
+            <div class='fd-myshop-benefit'>
+                <div module="myshop_asyncbankbook" class="ec-base-box gHalf">
+                    <!--@css(/css/module/myshop/bankbook.css)-->
+                    <ul>
+                        <!-- <li class="{$display_mileage|display}">
+                            <strong class="title">가용{$mileage_name}</strong>
+                            <strong class="data use">&nbsp;{$avail_mileage}</strong>
+                            <a href="/myshop/mileage/historyList.html" class="button"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/myshop/btn_result.gif" alt="조회" /></a>
+                        </li>
+                        <li>
+                            <strong class="title">사용{$mileage_name}</strong>
+                            <strong class="data">{$used_mileage}</strong>
+                        </li> -->
+                        <li>
+                            <p class="title">
+                                <a href='/myshop/mileage/historyList.html' class='flex-between'>
+                                    <span class='noto'>적립금</span>
+                                    <i class='xi-angle-right-min'></i>
+                                </a>
+                            </p>
+                            <p class="data noto">{$total_mileage}</p>
+                        </li>
+                        <li>
+                            <p class="title">
+                                <a href="/myshop/coupon/coupon.html" class='flex-between'>
+                                    <span class='noto'>쿠폰</span>
+                                    <i class='xi-angle-right-min'></i>
+                                </a>
+                            </p>
+                            <p class="data noto">{$coupon_cnt}<span>장</span></p>
+                        </li>
+                        <li>
+                            <p class="title">
+                                <a href="/board/product/list.html?board_no=4" class='flex-between'>
+                                    <span class='noto'>리뷰</span>
+                                    <i class='xi-angle-right-min'></i>
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="title">
+                                <a href="/myshop/board_list.html" class='flex-between'>
+                                    <span class='noto'>문의내역</span>
+                                    <i class='xi-angle-right-min'></i>
+                                </a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class='right-cont'>
+            <div module="myshop_orderstate" id="orderstate">
+                <!--@css(/css/module/myshop/orderState.css)-->
+                <!-- <div class="title">
+                    <h3>나의 주문처리 현황 <span class="desc">(최근 <em>3개월</em> 기준)</span></h3>
+                </div> -->
+                <div class="state">
+                    <div class="top_state">
+                        <div class="state_tit">
+                            <a href="/myshop/order/list.html">
+                                <h3>주문 / 배송 조회<i class='xi-angle-right-min'></i></h3>
+                            </a>
+                            <span class='roboto'>최근 3개월 기준</span>
+                        </div>
+
+                        <ul class="order">
+                            <li>
+                                <p>입금전</p>
+                                <a href="{$shppiedBeforeUrl}" class="count">{$shppiedBeforeCount}</a>
+                            </li>
+                            <li>
+                                <p>배송준비중</p>
+                                <a href="{$shppiedStandbyUrl}" class="count">{$shppiedStandbyCount}</a>
+                            </li>
+                            <li>
+                                <p>배송중</p>
+                                <a href="{$shppiedBeginUrl}" class="count">{$shppiedBeginCount}</a>
+                            </li>
+                            <li>
+                                <p>배송완료</p>
+                                <a href="{$shppiedComplateUrl}" class="count">{$shppiedComplateCount}</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bot_state">
+                        <div class="state_tit">
+                            <a href="/myshop/order/list.html?mode=cs&history_start_date=2021-10-16&history_end_date=2022-01-14&past_year=2021">
+                                <h3>취소 / 교환 / 반품 조회<i class='xi-angle-right-min'></i></h3>
+                            </a>
+                            <span class='roboto'>최근 3개월 기준</span>
+                        </div>
+                        <ul class="cs">
+                            <li>
+                                <p>취소</p>
+                                <a href="{$orderCancelUrl}" class="count">{$orderCancelCount}</a>
+                            </li>
+                            <li>
+                                <p>교환</p>
+                                <a href="{$orderExchangeUrl}" class="count">{$orderExchangeCount}</a>
+                            </li>
+                            <li>
+                                <p>반품</p>
+                                <a href="{$orderReturnUrl}" class="count">{$orderReturnCount}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div id="myshopMain" module="myshop_main">
+                <!--@css(/css/module/myshop/main.css)--
+                <div class="shoplist order">
+                    <h3><a href="/myshop/order/list.html"><strong class='ridi'>order</strong>주문내역 조회</a></h3>
+                    <p><a href="/myshop/order/list.html">고객님께서 주문하신 상품의 주문내역을 확인하실 수 있습니다.<br />비회원의 경우, 주문서의 주문번호와 비밀번호로 주문조회가 가능합니다.</a></p>
+                </div>
+                <div class="shoplist profile">
+                    <h3><a href="/member/modify.html"><strong class='ridi'>profile</strong>회원 정보</a></h3>
+                    <p><a href="/member/modify.html">회원이신 고객님의 개인정보를 관리하는 공간입니다.<br />개인정보를 최신 정보로 유지하시면 보다 간편히 쇼핑을 즐기실 수 있습니다.</a></p>
+                </div>
+                <div class="shoplist wishlist">
+                    <h3><a href="/myshop/wish_list.html"><strong class='ridi'>wishlist</strong>관심 상품</a></h3>
+                    <p><a href="/myshop/wish_list.html">관심상품으로 등록하신 상품의 목록을 보여드립니다.</a></p>
+                </div>
+                <div class="shoplist likeIt {$myLike_display|display}">
+                    <h3><a href="{$myLike_href}"><strong class='ridi'>Like it</strong>좋아요</a></h3>
+                    <p><a href="{$myLike_href}">'좋아요'를 선택한 상품과 상품분류 목록을 보여드립니다.</a></p>
+                </div>
+                <div class="shoplist mileage">
+                    <h3 class="txtTitle16B"><a href="/myshop/mileage/historyList.html"><strong class='ridi'>mileage</strong>{$mileage_name}</a></h3>
+                    <p class="txtSub11"><a href="/myshop/mileage/historyList.html">{$mileage_name}은 상품 구매 시 사용하실 수 있습니다.<br />적립된 금액은 현금으로 환불되지 않습니다.</a></p>
+            </div>
+            <div class="shoplist deposits {$deposit_display|display}">
+                    <h3 class="txtTitle16B"><a href="/myshop/deposits/historyList.html"><strong class='ridi'>deposits</strong>{$deposit_name}</a></h3>
+                    <p class="txtSub11"><a href="/myshop/deposits/historyList.html">{$deposit_name}은 현금과 동일하게 상품 구매시 사용하실 수 있습니다.<br />예치된 금액은 현금으로 환불이 가능합니다. ({$deposit_name} 적립: 주문취소 등의 환불금액 발생 시 {$deposit_name}으로 적립이 가능합니다.)</a></p>
+                </div>
+                <div class="shoplist consult {$consult_display|display}">
+                    <h3><a href="/board/consult/list.html"><strong class='ridi'>consult</strong>1:1 맞춤상담</a></h3>
+                    <p><a href="/board/consult/list.html">고객님의 궁금하신 문의사항에 대하여 1:1맞춤상담 내용을 확인하실 수 있습니다.</a></p>
+                </div>
+                <div class="shoplist coupon {$coupon_display|display}">
+                    <h3><a href="/myshop/coupon/coupon.html"><strong class='ridi'>coupon</strong>쿠폰</a></h3>
+                    <p><a href="/myshop/coupon/coupon.html">고객님이 보유하고 계신 쿠폰내역을 보여드립니다.</a></p>
+                </div>
+                <div class="shoplist board">
+                    <h3><a href="/myshop/board_list.html"><strong class='ridi'>board</strong>게시물 관리</a></h3>
+                    <p><a href="/myshop/board_list.html">고객님께서 작성하신 게시물을 관리하는 공간입니다.<br />고객님께서 작성하신 글을 한눈에 관리하실 수 있습니다.</a></p>
+                </div>
+                <div class="shoplist address">
+                    <h3><a href="/myshop/addr/list.html"><strong class='ridi'>address</strong>배송 주소록 관리</a></h3>
+                    <p><a href="/myshop/addr/list.html">자주 사용하는 배송지를 등록하고 관리하실 수 있습니다.</a></p>
+                </div>
+                <div module="Myshop_InquiryDash" class="shoplist inquiry">
+                    <h3><a href="/board/inquiry/list.html"><strong class='ridi'>Inquiry</strong>대량구매 문의 관리</a></h3>
+                    <p><a href="/board/inquiry/list.html">요청한 대량구매문의 내역을 확인하고 관리하실 수 있습니다.</a></p>
+                </div>
+                <div class="shoplist inquiry">
+                </div>
+                <div class="shoplist inquiry">
+                </div>
+                <div style="clear:both"></div>
+            </div> -->
+        </div>
+    </div>    
+</div>

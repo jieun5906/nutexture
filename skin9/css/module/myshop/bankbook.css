@@ -1,0 +1,6 @@
+.xans-myshop-asyncbankbook ul:after { content:""; display:block; clear:both; }
+.xans-myshop-asyncbankbook ul li {}
+.xans-myshop-asyncbankbook .title {}
+.xans-myshop-asyncbankbook .data {}
+.xans-myshop-asyncbankbook .use { color:#008bcc; }
+.xans-myshop-asyncbankbook a.button {}
