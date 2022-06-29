@@ -581,25 +581,6 @@ span.fd-review-more {display:inline-block; margin-left:5px; padding:4px 6px !imp
 .story-prd .sp-bot .sp-slide img {width:60%; margin:0 auto;}
 .story-prd .sp-bot p {text-align:center; font-size:1rem; padding:60px; background-color:#eee;}
 
-/*********** methodology ***********/
-.fd-meth-cont {margin:190px auto 150px;}
-.fd-meth-cont.mw1350 {max-width: 70.313vw;}
-.fd-meth-cont .main-txt-wrap {margin-bottom:66px;}
-.fd-meth-cont .main-txt-wrap .main-txt {font-weight:700; }
-.fd-meth-cont .main-txt-wrap .main-txt.en {font-size:2.5rem; line-height:3rem; padding-bottom:14px;}
-.fd-meth-cont .main-txt-wrap .main-txt.ko {font-size:1.875rem; line-height:2.6rem;padding-bottom:32px;}
-.fd-meth-cont .main-txt-wrap .sub-txt {font-size:15px; line-height:27px;}
-.fd-meth-cont .meth-wrap {display:flex; height:1064px; justify-content:space-between;}
-.fd-meth-cont .meth-wrap .meth-item {width:17.708vw;}
-.fd-meth-cont .meth-wrap .meth-item .meth-img {width:100%; overflow: hidden;}
-.fd-meth-cont .meth-wrap .meth-item .meth-img img {width:100%; height: 100%; object-fit: cover;}
-.fd-meth-cont .meth-wrap .meth-item2 {align-self:center;}
-.fd-meth-cont .meth-wrap .meth-item3 {align-self:flex-end;}
-.fd-meth-cont .meth-wrap .meth-tit {font-size:2.1rem; margin-bottom:22px; display:flex; align-items:center;}
-.fd-meth-cont .meth-wrap .meth-tit .gt {display:inline-block; padding-top:3px; padding-right:21px; font-size:2.5rem;vertical-align:middle;}
-.fd-meth-cont .meth-wrap .main-txt {font-weight:700; font-size:15px; margin:25px 0 20px;}
-.fd-meth-cont .meth-wrap .sub-txt {font-size:15px; line-height:24px; word-break: keep-all;}
-
 /*********** 마이페이지-메인 ***********/
 .fd_mypage_main {padding:0 7.9vw 118px;}
 .fd_mypage_main .titleArea h2 {text-align:left; font-size:25px; font-weight:400;}
@@ -732,6 +713,10 @@ span.fd-review-more {display:inline-block; margin-left:5px; padding:4px 6px !imp
     #fd-story .section .sec03-text pre.text01 {margin-right:1.510vw;}
 }
 
+
+
+
+
 /* 22.06.28 */
 /********************** top **********************/
 #top .inner #menubar {display: flex; align-items: center;}
@@ -747,6 +732,9 @@ span.fd-review-more {display:inline-block; margin-left:5px; padding:4px 6px !imp
 #top .inner #menubar .accordionmenu-cont > ul {position: absolute;}
 
 /* 22.06.29 */
+/********************** 하단 블러효과 **********************/
+.bottom-blur {position: fixed; left: 0; bottom: -21px; width: 100%; height: 35px; background: #fff; filter: blur(20px);}
+
 /********************** 공통-상단 타이틀 **********************/
 .header-tit {position: fixed; top: 20px; left: 50%; transform: translateX(-50%); text-align: center; z-index: 1000;}
 .header-tit p {font-size: 15px; line-height: 20px;}
@@ -763,8 +751,9 @@ span.fd-review-more {display:inline-block; margin-left:5px; padding:4px 6px !imp
 #fd-main #section2 {margin-top: 40px;}
 #fd-main #section2 .tit {margin: 0 auto 29px; font-size: 15px; line-height: 20px; text-align: center;}
 #fd-main #section2 .df-bannermanager {display: flex;}
-#fd-main #section2 .df-bannermanager a {position: relative; display: block; width: 50%; height: auto;}
+#fd-main #section2 .df-bannermanager a {position: relative; display: block; width: 50%; height: auto; overflow: hidden;}
 #fd-main #section2 .df-bannermanager a img {width: 100%; height: 100%; object-fit: cover;}
+#fd-main #section2 .df-bannermanager a:hover img {opacity: .5; filter: blur(15px); transition: .3s;}
 #fd-main #section2 .df-bannermanager a .info {position: absolute; top: 17px; left: 19px; font-size: 14px;}
 #fd-main #section3 {margin-top: 40px;}
 #fd-main #section3 .tit {margin-bottom: 26px; text-align: center; font-size: 15px; line-height: 20px;}
@@ -786,3 +775,32 @@ span.fd-review-more {display:inline-block; margin-left:5px; padding:4px 6px !imp
 #fd-productList .menuCategory li a {font-size: 14px; color: #8e8686;}
 #fd-productList #listcontentWrap4 {padding: 0;}
 #fd-productList #listcontentWrap4 .fdlist ul li .prdpadding {margin: 0;}
+
+/*********** methodology ***********/
+.fd-meth-cont {width: 100%; box-sizing: border-box;}
+.fd-meth-cont .main-txt-wrap {margin-bottom:37px; font-size: 15px; line-height: 20px; color: #8e8686; font-weight: 500;}
+
+.fd-meth-cont .top-cont {display:flex; justify-content:space-between; padding:0 20px;}
+.fd-meth-cont .top-cont .meth-item {position: relative; width: 28.802vw;}
+.fd-meth-cont .top-cont .meth-item.active img {filter: blur(8px);}
+.fd-meth-cont .top-cont .meth-item.active p {filter: blur(4px);}
+/* .fd-meth-cont .top-cont .meth-item .blur-box {position: absolute; width: 100%; height: 100%; opacity: 0; background: #fff; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);}
+.fd-meth-cont .top-cont .meth-item .blur-box {opacity: 1;} */
+.fd-meth-cont .top-cont .meth-item .meth-img {width:100%; overflow: hidden;}
+.fd-meth-cont .top-cont .meth-item .meth-img img {width:100%; height: 100%; object-fit: cover;}
+.fd-meth-cont .top-cont .meth-tit {font-size:15px; margin-bottom:8px; display:flex; align-items:center;}
+.fd-meth-cont .top-cont .meth-tit .gt {display:inline-block; padding-top:3px; padding-right:5px; vertical-align:middle;}
+.fd-meth-cont .top-cont .meth-tit .gro {margin-right: 6px;}
+.fd-meth-cont .top-cont .meth-tit .gro::after {content: "|"; margin-left: 5px;}
+.fd-meth-cont .top-cont .meth-tit .pre {font-size: 14px;}
+.fd-meth-cont .top-cont .meth-tit .gro,
+.fd-meth-cont .top-cont .meth-tit .pre {color: #8e8686;}
+.fd-meth-cont .top-cont .sub-txt {font-size:15px; line-height:20px; margin-top: 11px; word-break: keep-all; color: #8e8686;}
+.fd-meth-cont .bot-cont {margin-top: 80px;}
+.fd-meth-cont .bot-cont .tit {text-align: center; font-size: 15px; line-height: 20px; margin-bottom: 14px;}
+.fd-meth-cont .bot-cont .bot-info-top {cursor: pointer; display: flex; align-items: center; line-height: 19px; padding:5px 0 2px; border-bottom:1px solid #818181; margin: 0 20px;}
+.fd-meth-cont .bot-cont .bot-info-top span {font-size: 15px;}
+.fd-meth-cont .bot-cont .bot-info-bot {display: none; padding:10px 0 38px;}
+.fd-meth-cont .bot-cont .bot-info-bot .info-cont {margin: 0 20px 10px; font-size: 15px; line-height: 20px; color: #8e8686;}
+.fd-meth-cont .bot-cont .bot-info-bot .info-cont > p {margin-bottom: 5px;}
+.fd-meth-cont .bot-cont .bot-info-bot .info-cont img {width: 100%;}
