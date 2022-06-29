@@ -1,51 +1,55 @@
 <!--@css(/css/bottom.css)-->
 
+<div class='bottom-blur'></div>
 
-<div class='inner mw1440 comm-pad'>
+<div class='inner'>
     <div class='footer-left'>
-        <!--@css(/css/module/layout/logobottom.css)-->
-        <div class="logo footer-logo" df-banner-code="footer-logo" hidden>
-            <a href="{#href}" target="{#target}" df-banner-clone>{#item}</a>
-        </div>
+        
         <div class="utilMenu">
             <ul>
                 <li><a href="/product/list.html?cate_no=23">SHOP</a></li>
                 <li><a href="/story.html">BRAND STORY</a></li>
                 <li><a href="/methodology.html">METHODOLOGY</a></li>
                 <li><a href="/board/faq/list.html?board_no=3">Q&A / FAQ</a></li>
-                <li><a href="/board/free/list.html?board_no=2">EVENT / NOTICE</a></li>
             </ul>
         </div>
+        
+        <div class='sns'>
+            <ul>
+                <li><a href='https://pf.kakao.com/_HxaxjTb' title="kakaotalk" target='_blank' class='gro'>KAKAO TALK</a></li>
+                <li><a href='https://www.instagram.com/nutexture.official/' target='_blank' class='gro'>INSTAGRAM</a></li>
+            </ul>
+        </div>
+        
+        <div class='cs'>
+            <p>CONTACT</p>
+            <p class='pre'>고객센터 채널톡</p>
+            <p class='pre'>평일 11:00 - 18:00</p>
+            <p class='pre'>(점심시간 13:00 - 14:00)</p>
+        </div>        
     </div>
     
     <div class='footer-right'>
-        <div class='cs'>
-            <strong>고객센터 채널톡</strong>
-            <p>평일 11:00 - 18:00</p>
-            <p>(점심시간 13:00 - 14:00)</p>
-            <p>토, 일, 공휴일 휴무</p>
-        </div>
         
         <div module="Layout_footer">
             <!--@css(/css/module/layout/2972/footer.css)--> 
-            <div class='sns'>
-                <ul>
-                    <li><a href='https://pf.kakao.com/_HxaxjTb' title="kakaotalk" target='_blank'><img src='/web/upload/fd/sns/kakao_b.png'></a></li>
-                    <li><a href='https://www.instagram.com/nutexture.official/' target='_blank'><i class='xi-instagram'></i></a></li>
-                </ul>
+            
+            <div class="info">
+                <p>
+                    <span class='no-con gro'>{$email}</span><br />
+                    <span class='no-con gro'>{$phone}</span><br />
+                    <span class='no-con pre'>{$mall_addr1} {$mall_addr2}</span>
+                </p>
             </div>
+
             <div class="address">
                 <p>
                     <span>{$company_name}</span> <span>사업자등록번호: {$company_regno}</span><span class='no-con'>대표자: {$president_name}</span><br />
-                    <span class='no-con'>{$mall_addr1} {$mall_addr2}</span><br />
                     <span class='no-con'>통신판매업 신고 : {$network_regno}</span><br />
-                    <span>대표번호: {$phone}</span><span class='no-con email'>이메일: <a href="mailto:{$email}">{$email}</a> </span><br />
                     <span>개인정보 보호 책임자: {$cpo_name}</span><span><a href="/member/privacy.html">개인정보처리방침</a></span><span class='no-con'><a href="/member/agreement.html">이용약관</a></span>
                 </p>
-                <p class="copyright gro-b">&copy; 2022 NuTexture. ALL RIGHTS RESERVED.</p>
+                <p class="copyright gro">©2022 ALL RIGHTS RESERVED</p>
             </div>
-
-            <p class="pageTop"><a href="#header" title="화면 최상단으로 이동하기">TOP</a></p>
         </div>
     </div>
 </div>
