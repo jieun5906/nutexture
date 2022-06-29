@@ -13,20 +13,18 @@
         
     	<div class='spec'>
             <p class="icon">{$soldout_icon}{$stock_icon}{$recommend_icon}{$new_icon}{$product_icons}{$benefit_icons}</p>
-            <p class="name"><a href="/product/detail.html{$param}">{$product_name}</a></p>
-
+            <p class="name pre"><a href="/product/detail.html{$param}">{$product_name}</a></p>
+            <p class="prices gro">
+                <span class="price normal {$product_custom|display}">
+                    <strike>{$disp_product_custom}</strike>
+                </span>
+                <span class="price sale">{$disp_product_price}</span>
+            </p>
+            <p class="info pre {$summary_desc|display}">{$summary_desc}</p>
             <!-- <ul module="product_ListItem">
                 <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
                 <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
             </ul> -->
-            <p class="info {$summary_desc|display}">{$summary_desc}</p>
-            <p class="prices gro">
-                <span class="price normal {$product_custom|display}">
-                    <strike>{$disp_product_custom}</strike>
-                    <i class='xi-long-arrow-right'></i>
-                </span>
-                <span class="price sale">{$disp_product_price}</span>
-            </p>
             
         </div>
     	

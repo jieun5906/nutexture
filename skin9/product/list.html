@@ -1,105 +1,50 @@
 <!--@layout(/layout-list.html)-->
-
 <!--@css(/css/fdproduct.css)-->
 <!--@css(/css/module/product/listnormal.css)-->
 <!--@js(/js/subcate.js)-->
-<!--@js(/js/fd_prdList_subTitle.js)-->
+<!--@0js(/js/fd_prdList_subTitle.js)-->
 
-
-<div module="Product_menupackage" class='prdList-tit-cont'>
-    <div class="title" module="product_headcategory">
-        <p class="banner">{$top_image1_tag}{$top_image2_tag}{$top_image3_tag}</p>
-        <!--<h2><span>{$title_text_or_image}</span></h2>-->
+<div id="fd-productList">
+    <div class="header-tit">
+        <p class="gro">SHOP</p>
+        <p class="pre">제품 보기</p>
     </div>
-    
-    <!--@css(/css/module/product/menupackage.css)-->
-    <div class="path prdList-path" module="product_headcategory">
-        <span>현재 위치</span>
-        <ol>
-            <li><a href="/product/list.html?cate_no=23">SHOP</a></li>
-            <li class="{$disp_cate_1|display}"><a href="/product/list.html{$param_1}"> <p>></p> {$name_1}</a></li>
-            <li class="{$disp_cate_2|display}"><a href="/product/list.html{$param_2}"> <p>></p> {$name_2}</a></li>
-            <li class="{$disp_cate_3|display}"><a href="/product/list.html{$param_3}"> <p>></p> {$name_3}</a></li>
-            <li class="{$disp_cate_4|display}"><strong><a href="/product/list.html{$param_4}"> <p>></p> {$name_4}</a></strong></li>
-        </ol>
-    </div>   
-    
-    <p class='prdList-subTit'></p>
-    <p class='prdList-commingSoon gro-b'>COMING SOON</p>
+
+
+    <ul class="menuCategory gro">
+        <li><a href='/product/list.html?cate_no=23'>ALL</a></li>
+        <li><a href='/product/list.html?cate_no=32'>FACE</a></li>
+        <li><a href='/product/list.html?cate_no=33'>BODY</a></li>
+        <li><a href='/product/list.html?cate_no=26'>ROUTINES</a></li>
+        <li><a href='/product/list.html?cate_no=49'>MINIS</a></li>
+        <li><a href='/product/list.html?cate_no=42'>TOOLS</a></li>
+    </ul>
+
+    <div id='listcontentWrap4' class='prList-wrap'>
+        <div module="product_listnormal" class="fdlist">
+            <!--
+            $count = 24
+            $basket_result = /product/add_basket.html
+            $basket_option = /product/basket_option.html
+            -->
+            <ul class="grid4">
+                <!--@import(/prdlist.html)-->
+                <!--@import(/prdlist.html)-->
+            </ul>
+        </div>
+
+        <div module="product_normalpaging" class="fd-paging">
+            <a href="{$param_first}" class="first"><img src="/img/page_first.gif" alt="첫 페이지" /></a>
+            <a href="{$param_before}"><img src="/img/page_prev.gif" alt="이전 페이지" /></a>
+            <ol>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+            </ol>
+            <a href="{$param_next}"><img src="/img/page_next.gif" alt="다음 페이지" /></a>
+            <a href="{$param_last}" class="last"><img src="/img/page_last.gif" alt="마지막 페이지" /></a>
+        </div>
+    </div>
 </div>
-
-<div id='listcontentWrap4' class='prList-wrap'>
-    <div module="product_listrecommend" class="fdlist">
-        <div id="catetitle" style="margin-bottom:55px"><h2>Best Item</h2></div>
-
-        <!--
-        $count = 4
-        $basket_result = /product/add_basket.html
-        $basket_option = /product/basket_option.html
-        -->
-        <ul class="grid4 ">
-            <!--@import(/prdlist.html)-->
-            <!--@import(/prdlist.html)-->
-        </ul>
-    </div>
-
-
-    <div module="Product_menupackage">
-        <!--<div module="product_headcategory" id="catetitle"><h2>{$title_text}</h2></div>-->
-        <div class="menuCategory" id="subcate">
-            <ul class="menuCategory" module="product_displaycategory"  style="display:{$display};">
-                <li><a href="/product/list.html?{$param_cate_no}">{$category_name}</a></li>
-                <li><a href="/product/list.html?{$param_cate_no}">{$category_name}</a></li>
-                <li><a href="/product/list.html?{$param_cate_no}">{$category_name}</a></li>
-            </ul>
-        </div> 
-    </div>
-
-    <div module="product_normalmenu">
-        <!--
-        $compare_page = /product/compare.html
-        -->
-
-        <!-- <div class="function">
-            <p class="prdCount">Total : <strong>{$total_count}</strong> items</p>
-            <ul id="type" module="product_Orderby">
-                <li><a href="{$param}&amp;sort_method=5#Product_ListMenu">New</a></li>
-                <li><a href="{$param}&amp;sort_method=1#Product_ListMenu">Name</a></li>
-                <li><a href="{$param}&amp;sort_method=3#Product_ListMenu">Low price</a></li>
-                <li><a href="{$param}&amp;sort_method=4#Product_ListMenu">High price</a></li>
-                <li><a href="{$param}&amp;sort_method=7#Product_ListMenu">Review</a></li>
-                <li style="display:none"><a href="{$param}&amp;sort_method=2#Product_ListMenu">제조사</a></li>
-            </ul>
-
-        </div> -->
-    </div>
-
-
-    <div module="product_listnormal" class="fdlist">
-
-        <!--
-        $count = 20
-        $basket_result = /product/add_basket.html
-        $basket_option = /product/basket_option.html
-        -->
-        <ul class="grid4">
-            <!--@import(/prdlist.html)-->
-            <!--@import(/prdlist.html)-->
-        </ul>
-    </div>
-
-
-    <div module="product_normalpaging" class="fd-paging">
-        <a href="{$param_first}" class="first"><img src="/img/page_first.gif" alt="첫 페이지" /></a>
-        <a href="{$param_before}"><img src="/img/page_prev.gif" alt="이전 페이지" /></a>
-        <ol>
-            <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
-            <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
-            <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
-            <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
-            <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
-        </ol>
-        <a href="{$param_next}"><img src="/img/page_next.gif" alt="다음 페이지" /></a>
-        <a href="{$param_last}" class="last"><img src="/img/page_last.gif" alt="마지막 페이지" /></a>
-    </div>
- </div>
