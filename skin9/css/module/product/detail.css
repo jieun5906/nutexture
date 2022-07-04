@@ -4,7 +4,7 @@
 .xans-product-detail {font-size:12px}
 .xans-product-detail .detailArea:after { content:""; display:block; clear:both; }
 
-.xans-product-detail .infoArea .prdname {/*border-top:1px solid #eaeaea;*/ padding:20px 0 10px; text-align:left; font-size:15px;}
+.xans-product-detail .infoArea .prdInfo {/*border-top:1px solid #eaeaea;*/ /* padding:20px 0 10px */; text-align:left; font-size:15px;}
 .xans-product-detail .infoArea .prdinfotext {font-size:15px; line-height:23px; padding-bottom:17px; margin-top:17px; color:#000; font-weight:normal; word-break:keep-all;}
 
 
@@ -32,7 +32,7 @@
     #left {display:block}
 }
 
-#detailinfo {background:#fff; float:left; margin:15.7vh 82px 50px 56px;}
+
 
 /* infoArea */
 .xans-product-detail .infoArea p.delivery { padding:10px 0 20px; }
@@ -308,11 +308,12 @@
 .rollingprd img { max-width:100%; }
 .rollingprd li { position:relative; display:inline-block; padding:0; vertical-align:top;}
 
-.rollingprd li .information {padding:0 2px; position:absolute; bottom:28px; left:30px;}
+.rollingprd li .information {display: flex; align-items: center; justify-content: space-between; padding:0 14px; margin-top: 5px; /* position:absolute; bottom:28px; left:30px; */}
 .rollingprd li .information .icon {margin-right:5px; margin-bottom:7px;}
-.rollingprd li .information .name {font-size:15px;color:#000; font-weight:700;}
-.rollingprd li .information .price {font-size:15px; margin-top:8px; color:#000;}
-.rollingprd .thumbnail {padding:0 5px; margin-bottom:0}
+.rollingprd li .information .name {font-size:15px; color:#000; font-weight:700;}
+.rollingprd li .information .prices {display: flex; align-items: center;}
+.rollingprd li .information .price {font-size:14px; color:#000;}
+.rollingprd .thumbnail {padding:0; margin-bottom:0}
 .rollingprd .thumbnail img { width:100%; }
 
 .rollingprd .grid3 li { width:33.33%; }

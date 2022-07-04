@@ -12,7 +12,7 @@
     border-top:1px solid #000;
 }
 
-#detailguide .accordion-label:after {
+/* #detailguide .accordion-label:after {
     background: transparent url(https://nutexturekr.cafe24.com/web/upload/fd/arrow-down.png) center center no-repeat;
     background-size: 100%;
     content: '';
@@ -28,7 +28,7 @@
 
 #detailguide .accordion-label.ui-state-active:after {
     background: transparent url(https://nutexturekr.cafe24.com/web/upload/fd/arrow-up.png) center center no-repeat;
-}
+} */
 
 
 textarea:focus, input:focus {
