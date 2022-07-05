@@ -141,3 +141,11 @@
   line-height:16px;
   width:130px;
 }*/
+
+
+@media screen and (max-width: 768px) {
+  /*********** header ***********/
+  #top .inner {padding:16px 15px;}
+  #top .logo img {width: 120px;}
+
+}

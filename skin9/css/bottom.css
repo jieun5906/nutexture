@@ -18,3 +18,28 @@
 #bottom .footer-right .address span.email a {text-decoration:none;}
 
 #bottom .footer-right .copyright {line-height: 19px; color: #8E8686; padding-left: 5px; font-size: 14px; font-weight: normal;}
+
+#bottom .footer > div.pc {display: block;}
+#bottom .footer > div.mobile {display: none;}
+@media screen and (max-width: 768px) {
+    #bottom {padding: 187px 15px 15px;}
+    #bottom .footer > div.pc {display: none;}
+    #bottom .footer > div.mobile {display: block;}
+
+    #bottom .footer-left,
+    #bottom .footer-right {width: 45%;}
+    #bottom .footer-left {display: revert;}
+    #bottom .footer-left .utilMenu,
+    #bottom .footer-right .cs {margin-bottom: 13px;}
+    #bottom .footer-left a,
+    #bottom .footer-right .cs p {font-size: 14px !important; font-weight: 400; line-height: 20px;}
+    #bottom .footer-right > div p span {font-size: 14px; font-weight: 400;}
+
+    #bottom .xans-layout-footer .address {margin-top: 20px;}
+    #bottom .xans-layout-footer .address .p0 {padding-left: 0;}
+    #bottom .xans-layout-footer .address a,
+    #bottom .xans-layout-footer .address span {position: relative; color: #8E8686; font-size: 14px; line-height: 21px; font-family: 'Pretendard'; font-weight: 400;}
+    #bottom .xans-layout-footer .address span:after {content:''; width:1px; height:10px; display:inline-block; background-color:#8E8686;position:absolute; top:3px; right:-1px;}
+    #bottom .xans-layout-footer .copyright {color: #8E8686; font-size: 14px; margin-top: 10px; font-weight: 400;}
+  
+  }
