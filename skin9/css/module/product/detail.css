@@ -236,7 +236,7 @@
 
 #totalProducts .option_box_del {margin-top:6px; margin-left:5px}
 /* 총 상품 금액 */
-.totalPrice { font-weight:400; font-size:15px; padding:0; color:#000; vertical-align:middle; background:#fff;  text-align:left; display:inline-block;}
+.totalPrice { font-weight:400; font-size:15px; padding:0; color:#000; vertical-align:middle; background:transparent;  text-align:left; display:inline-block;}
 .totalPrice .total { color:#000; }
 .totalPrice .total em { font-style:normal; font-size:15px; padding-left:4px;}
 

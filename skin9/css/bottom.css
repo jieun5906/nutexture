@@ -22,7 +22,7 @@
 #bottom .footer > div.pc {display: block;}
 #bottom .footer > div.mobile {display: none;}
 @media screen and (max-width: 768px) {
-    #bottom {padding: 187px 15px 15px;}
+    #bottom {padding: 535px 15px 15px; /* padding: 187px 15px 15px; */}
     #bottom .footer > div.pc {display: none;}
     #bottom .footer > div.mobile {display: block;}
 

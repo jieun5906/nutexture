@@ -72,9 +72,9 @@
                         <caption>기본배송</caption>
                         <colgroup>
                             <!-- <col style="width:5px" /> -->
-                            <col style="width:120px" />
+                            <col style="width:300px" />
                             <!-- <col style="width:0" /> -->
-                            <col style="width:150px" />
+                            <!-- <col style="width:150px"/> -->
                             <col style="width:120px" />
                             <!-- <col style="width:98px" />
                             <col style="width:85px" />
@@ -101,6 +101,21 @@
                                         <input type="checkbox" id="{$chk_id}" name="{$chk_name}" />
                                         {$product_name_link}</span> {$icon} {$pickup_icon} {$benefit_icons}<span class="{$eng_name_display|display} engName">(영문명 : {$eng_name})                                        
                                     </span>
+                                    <span class="left qty">
+                                        <span class="tit">수량:</span>
+                                        <span class="{$nplusevent_hide_display|display}">
+                                            <span class="ec-base-qty">
+                                                <a href="javascript:;" onclick="{$out_shortcut}">
+                                                    <i class='fas fa-minus'></i>
+                                                </a>
+                                                {$form.quantity}
+                                                <a href="javascript:;" onclick="{$add_shortcut}">
+                                                    <i class='fas fa-plus'></i>
+                                                </a>
+                                            </span>
+                                        </span>
+                                        <span class="{$nplusevent_show_display|display}">{$quantity}</span>
+                                    </span>
                                     <span class="button del-btn">
                                         <a href="javascript:;" onclick="{$action_move_item}">삭제하기</a>
                                     </span>
@@ -173,22 +188,6 @@
                                     <div class="{$discount}"><span>{$product_price_front_head}{$product_price_front}{$product_price_front_tail}</span><p class="{$product_price_display|display}">{$product_price_back_head}{$product_price_back}{$product_price_back_tail}</p></div>
                                     <div class="{$product_sale_price_display|display}"><span>{$product_sale_price_front_head}{$product_sale_price_front}{$product_sale_price_front_tail}</span><p class="{$product_sale_price_ref_display|display}">{$product_sale_price_back_head}{$product_sale_price_back}{$product_sale_price_back_tail}</p></div>
                                 </td> -->
-                                <td class="left">
-                                    <span class="tit">수량:</span>
-                                    <span class="{$nplusevent_hide_display|display}">
-                                        <span class="ec-base-qty">
-                                            <a href="javascript:;" onclick="{$out_shortcut}">
-                                                <i class='fas fa-minus'></i>
-                                            </a>
-                                            {$form.quantity}
-                                            <a href="javascript:;" onclick="{$add_shortcut}">
-                                                <i class='fas fa-plus'></i>
-                                            </a>
-                                        </span>
-                                        <!-- <a href="javascript:;" class="gBlank5" onclick="{$action_modify}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/btn_quantity_modify.gif" alt="변경" /></a> -->
-                                    </span>
-                                    <span class="{$nplusevent_show_display|display}">{$quantity}</span>
-                                </td>
                                 <td class="thumb gClearLine"><a href="/product/detail.html{$param}"><img src="{$img}" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="{$name_alt}" /></a></td>
                                 <!-- <td><span class="txtInfo">{$mileage}</span></td>
                                 <td rowspan="{$delv_cnt}" class="{$delv_cnt_display|display}"><p class="{$delv_price_display|display}">{$delv_price_front_head}{$delv_price_front}{$delv_price_front_tail}<span class="{$delv_ref_display|display}"><br />{$delv_price_back_head}{$delv_price_back}{$delv_price_back_tail}</span><br /></p>{$delv_type}</td>
@@ -200,6 +199,21 @@
                                         <input type="checkbox" id="{$chk_id}" name="{$chk_name}" />
                                         {$product_name_link}</span> {$icon} {$pickup_icon} {$benefit_icons}<span class="{$eng_name_display|display} engName">(영문명 : {$eng_name})                                        
                                     </span>
+                                    <span class="left qty">
+                                        <span class="tit">수량:</span>
+                                        <span class="{$nplusevent_hide_display|display}">
+                                            <span class="ec-base-qty">
+                                                <a href="javascript:;" onclick="{$out_shortcut}">
+                                                    <i class='fas fa-minus'></i>
+                                                </a>
+                                                {$form.quantity}
+                                                <a href="javascript:;" onclick="{$add_shortcut}">
+                                                    <i class='fas fa-plus'></i>
+                                                </a>
+                                            </span>
+                                        </span>
+                                        <span class="{$nplusevent_show_display|display}">{$quantity}</span>
+                                    </span>
                                     <span class="button del-btn">
                                         <a href="javascript:;" onclick="{$action_move_item}">삭제하기</a>
                                     </span>
@@ -272,22 +286,6 @@
                                     <div class="{$discount}"><span>{$product_price_front_head}{$product_price_front}{$product_price_front_tail}</span><p class="{$product_price_display|display}">{$product_price_back_head}{$product_price_back}{$product_price_back_tail}</p></div>
                                     <div class="{$product_sale_price_display|display}"><span>{$product_sale_price_front_head}{$product_sale_price_front}{$product_sale_price_front_tail}</span><p class="{$product_sale_price_ref_display|display}">{$product_sale_price_back_head}{$product_sale_price_back}{$product_sale_price_back_tail}</p></div>
                                 </td> -->
-                                <td class="left">
-                                    <span class="tit">수량:</span>
-                                    <span class="{$nplusevent_hide_display|display}">
-                                        <span class="ec-base-qty">
-                                            <a href="javascript:;" onclick="{$out_shortcut}">
-                                                <i class='fas fa-minus'></i>
-                                            </a>
-                                            {$form.quantity}
-                                            <a href="javascript:;" onclick="{$add_shortcut}">
-                                                <i class='fas fa-plus'></i>
-                                            </a>
-                                        </span>
-                                        <!-- <a href="javascript:;" class="gBlank5" onclick="{$action_modify}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/btn_quantity_modify.gif" alt="변경" /></a> -->
-                                    </span>
-                                    <span class="{$nplusevent_show_display|display}">{$quantity}</span>
-                                </td>
                                 <td class="thumb gClearLine"><a href="/product/detail.html{$param}"><img src="{$img}" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="{$name_alt}" /></a></td>
                                 <!-- <td><span class="txtInfo">{$mileage}</span></td>
                                 <td rowspan="{$delv_cnt}" class="{$delv_cnt_display|display}"><p class="{$delv_price_display|display}">{$delv_price_front_head}{$delv_price_front}{$delv_price_front_tail}<span class="{$delv_ref_display|display}"><br />{$delv_price_back_head}{$delv_price_back}{$delv_price_back_tail}</span><br /></p>{$delv_type}</td>
@@ -301,9 +299,9 @@
                         <caption>업체기본배송</caption>
                         <colgroup>
                             <!-- <col style="width:5px" /> -->
-                            <col style="width:120px" />
+                            <col style="width:300px" />
                             <!-- <col style="width:0" /> -->
-                            <col style="width:150px" />
+                            <!-- <col style="width:150px"/> -->
                             <col style="width:120px" />
                             <!-- <col style="width:98px" />
                             <col style="width:85px" />
@@ -330,6 +328,21 @@
                                         <input type="checkbox" id="{$chk_id}" name="{$chk_name}" />
                                         {$product_name_link}</span> {$icon} {$pickup_icon} {$benefit_icons}<span class="{$eng_name_display|display} engName">(영문명 : {$eng_name})                                        
                                     </span>
+                                    <span class="left qty">
+                                        <span class="tit">수량:</span>
+                                        <span class="{$nplusevent_hide_display|display}">
+                                            <span class="ec-base-qty">
+                                                <a href="javascript:;" onclick="{$out_shortcut}">
+                                                    <i class='fas fa-minus'></i>
+                                                </a>
+                                                {$form.quantity}
+                                                <a href="javascript:;" onclick="{$add_shortcut}">
+                                                    <i class='fas fa-plus'></i>
+                                                </a>
+                                            </span>
+                                        </span>
+                                        <span class="{$nplusevent_show_display|display}">{$quantity}</span>
+                                    </span>
                                     <span class="button del-btn">
                                         <a href="javascript:;" onclick="{$action_move_item}">삭제하기</a>
                                     </span>
@@ -402,19 +415,6 @@
                                     <div class="{$discount}"><span>{$product_price_front_head}{$product_price_front}{$product_price_front_tail}</span><p class="{$product_price_display|display}">{$product_price_back_head}{$product_price_back}{$product_price_back_tail}</p></div>
                                     <div class="{$product_sale_price_display|display}"><span>{$product_sale_price_front_head}{$product_sale_price_front}{$product_sale_price_front_tail}</span><p class="{$product_sale_price_ref_display|display}">{$product_sale_price_back_head}{$product_sale_price_back}{$product_sale_price_back_tail}</p></div>
                                 </td> -->
-                                <td class="left">
-                                    <span class="{$nplusevent_hide_display|display}">
-                                        <span class="ec-base-qty">
-                                            {$form.quantity class='fas fa-minus'}
-                                            <a href="javascript:;" onclick="{$out_shortcut}">
-                                                <i></i>
-                                            </a>
-                                            <a href="javascript:;" onclick="{$add_shortcut}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_quantity_up.gif" alt="수량증가" class="up" /></a>
-                                        <i class='fas fa-plus'></i>
-                                        <!-- <a href="javascript:;" class="gBlank5" onclick="{$action_modify}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/btn_quantity_modify.gif" alt="변경" /></a> -->
-                                    </span>
-                                    <span class="{$nplusevent_show_display|display}">{$quantity}</span>
-                                </td>
                                 <!-- <td><span class="txtInfo">{$mileage}</span></td>
                                 <td rowspan="{$delv_cnt}" class="{$delv_cnt_display|display}"><p class="{$delv_price_display|display}">{$delv_price_front_head}{$delv_price_front}{$delv_price_front_tail}<span class="{$delv_ref_display|display}"><br />{$delv_price_back_head}{$delv_price_back}{$delv_price_back_tail}</span><br /></p>{$delv_type}</td>
                                 <td class="right"><span>{$sum_price_front_head}{$sum_price_front}{$sum_price_front_tail}</span><div class="{$sum_price_display|display}">{$sum_price_back_head}{$sum_price_back}{$sum_price_back_tail}</div></td> -->
@@ -426,6 +426,21 @@
                                         <input type="checkbox" id="{$chk_id}" name="{$chk_name}" />
                                         {$product_name_link}</span> {$icon} {$pickup_icon} {$benefit_icons}<span class="{$eng_name_display|display} engName">(영문명 : {$eng_name})                                        
                                     </span>
+                                    <span class="left qty">
+                                        <span class="tit">수량:</span>
+                                        <span class="{$nplusevent_hide_display|display}">
+                                            <span class="ec-base-qty">
+                                                <a href="javascript:;" onclick="{$out_shortcut}">
+                                                    <i class='fas fa-minus'></i>
+                                                </a>
+                                                {$form.quantity}
+                                                <a href="javascript:;" onclick="{$add_shortcut}">
+                                                    <i class='fas fa-plus'></i>
+                                                </a>
+                                            </span>
+                                        </span>
+                                        <span class="{$nplusevent_show_display|display}">{$quantity}</span>
+                                    </span>
                                     <span class="button del-btn">
                                         <a href="javascript:;" onclick="{$action_move_item}">삭제하기</a>
                                     </span>
@@ -498,19 +513,6 @@
                                     <div class="{$discount}"><span>{$product_price_front_head}{$product_price_front}{$product_price_front_tail}</span><p class="{$product_price_display|display}">{$product_price_back_head}{$product_price_back}{$product_price_back_tail}</p></div>
                                     <div class="{$product_sale_price_display|display}"><span>{$product_sale_price_front_head}{$product_sale_price_front}{$product_sale_price_front_tail}</span><p class="{$product_sale_price_ref_display|display}">{$product_sale_price_back_head}{$product_sale_price_back}{$product_sale_price_back_tail}</p></div>
                                 </td> -->
-                                <td class="left">
-                                    <span class="{$nplusevent_hide_display|display}">
-                                        <span class="ec-base-qty">
-                                            {$form.quantity class='fas fa-minus'}
-                                            <a href="javascript:;" onclick="{$out_shortcut}">
-                                                <i></i>
-                                            </a>
-                                            <a href="javascript:;" onclick="{$add_shortcut}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_quantity_up.gif" alt="수량증가" class="up" /></a>
-                                        <i class='fas fa-plus'></i>
-                                        <!-- <a href="javascript:;" class="gBlank5" onclick="{$action_modify}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/btn_quantity_modify.gif" alt="변경" /></a> -->
-                                    </span>
-                                    <span class="{$nplusevent_show_display|display}">{$quantity}</span>
-                                </td>
                                 <!-- <td><span class="txtInfo">{$mileage}</span></td>
                                 <td rowspan="{$delv_cnt}" class="{$delv_cnt_display|display}"><p class="{$delv_price_display|display}">{$delv_price_front_head}{$delv_price_front}{$delv_price_front_tail}<span class="{$delv_ref_display|display}"><br />{$delv_price_back_head}{$delv_price_back}{$delv_price_back_tail}</span><br /></p>{$delv_type}</td>
                                 <td class="right"><span>{$sum_price_front_head}{$sum_price_front}{$sum_price_front_tail}</span><div class="{$sum_price_display|display}">{$sum_price_back_head}{$sum_price_back}{$sum_price_back_tail}</div></td> -->
@@ -524,9 +526,9 @@
                         <caption>개별배송</caption>
                         <colgroup>
                             <!-- <col style="width:5px" /> -->
-                            <col style="width:120px" />
+                            <col style="width:300px" />
                             <!-- <col style="width:0" /> -->
-                            <col style="width:150px" />
+                            <!-- <col style="width:150px"/> -->
                             <col style="width:120px" />
                             <!-- <col style="width:98px" />
                             <col style="width:85px" />
@@ -553,6 +555,21 @@
                                         <input type="checkbox" id="{$chk_id}" name="{$chk_name}" />
                                         {$product_name_link}</span> {$icon} {$pickup_icon} {$benefit_icons}<span class="{$eng_name_display|display} engName">(영문명 : {$eng_name})
                                     </span>
+                                    <span class="left qty">
+                                        <span class="tit">수량:</span>
+                                        <span class="{$nplusevent_hide_display|display}">
+                                            <span class="ec-base-qty">
+                                                <a href="javascript:;" onclick="{$out_shortcut}">
+                                                    <i class='fas fa-minus'></i>
+                                                </a>
+                                                {$form.quantity}
+                                                <a href="javascript:;" onclick="{$add_shortcut}">
+                                                    <i class='fas fa-plus'></i>
+                                                </a>
+                                            </span>
+                                        </span>
+                                        <span class="{$nplusevent_show_display|display}">{$quantity}</span>
+                                    </span>
                                     <span class="button del-btn">
                                         <a href="javascript:;" onclick="{$action_move_item}">삭제하기</a>
                                     </span>
@@ -625,22 +642,6 @@
                                     <div class="{$discount}"><span>{$product_price_front_head}{$product_price_front}{$product_price_front_tail}</span><p class="{$product_price_display|display}">{$product_price_back_head}{$product_price_back}{$product_price_back_tail}</p></div>
                                     <div class="{$product_sale_price_display|display}"><span>{$product_sale_price_front_head}{$product_sale_price_front}{$product_sale_price_front_tail}</span><p class="{$product_sale_price_ref_display|display}">{$product_sale_price_back_head}{$product_sale_price_back}{$product_sale_price_back_tail}</p></div>
                                 </td> -->
-                                <td class="left">
-                                    <span class="tit">수량:</span>
-                                    <span class="{$nplusevent_hide_display|display}">
-                                        <span class="ec-base-qty">
-                                            <a href="javascript:;" onclick="{$out_shortcut}">
-                                                <i class='fas fa-minus'></i>
-                                            </a>
-                                            {$form.quantity}
-                                            <a href="javascript:;" onclick="{$add_shortcut}">
-                                                <i class='fas fa-plus'></i>
-                                            </a>
-                                        </span>
-                                        <!-- <a href="javascript:;" class="gBlank5" onclick="{$action_modify}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/btn_quantity_modify.gif" alt="변경" /></a> -->
-                                    </span>
-                                    <span class="{$nplusevent_show_display|display}">{$quantity}</span>
-                                </td>
                                 <!-- <td><span class="txtInfo">{$mileage}</span></td>
                                 <td><div class="txtInfo">개별배송<br />{$product_delv_str}</div></td>
                                 <td rowspan="{$delv_cnt}" class="{$delv_cnt_display|display}"><p class="{$delv_price_display|display}">{$delv_price_front_head}{$delv_price_front}{$delv_price_front_tail}<span class="{$delv_ref_display|display}"><br />{$delv_price_back_head}{$delv_price_back}{$delv_price_back_tail}</span><br /></p>{$delv_type}</td>
@@ -653,6 +654,21 @@
                                         <input type="checkbox" id="{$chk_id}" name="{$chk_name}" />
                                         {$product_name_link}</span> {$icon} {$pickup_icon} {$benefit_icons}<span class="{$eng_name_display|display} engName">(영문명 : {$eng_name})
                                     </span>
+                                    <span class="left qty">
+                                        <span class="tit">수량:</span>
+                                        <span class="{$nplusevent_hide_display|display}">
+                                            <span class="ec-base-qty">
+                                                <a href="javascript:;" onclick="{$out_shortcut}">
+                                                    <i class='fas fa-minus'></i>
+                                                </a>
+                                                {$form.quantity}
+                                                <a href="javascript:;" onclick="{$add_shortcut}">
+                                                    <i class='fas fa-plus'></i>
+                                                </a>
+                                            </span>
+                                        </span>
+                                        <span class="{$nplusevent_show_display|display}">{$quantity}</span>
+                                    </span>
                                     <span class="button del-btn">
                                         <a href="javascript:;" onclick="{$action_move_item}">삭제하기</a>
                                     </span>
@@ -725,22 +741,6 @@
                                     <div class="{$discount}"><span>{$product_price_front_head}{$product_price_front}{$product_price_front_tail}</span><p class="{$product_price_display|display}">{$product_price_back_head}{$product_price_back}{$product_price_back_tail}</p></div>
                                     <div class="{$product_sale_price_display|display}"><span>{$product_sale_price_front_head}{$product_sale_price_front}{$product_sale_price_front_tail}</span><p class="{$product_sale_price_ref_display|display}">{$product_sale_price_back_head}{$product_sale_price_back}{$product_sale_price_back_tail}</p></div>
                                 </td> -->
-                                <td class="left">
-                                    <span class="tit">수량:</span>
-                                    <span class="{$nplusevent_hide_display|display}">
-                                        <span class="ec-base-qty">
-                                            <a href="javascript:;" onclick="{$out_shortcut}">
-                                                <i class='fas fa-minus'></i>
-                                            </a>
-                                            {$form.quantity}
-                                            <a href="javascript:;" onclick="{$add_shortcut}">
-                                                <i class='fas fa-plus'></i>
-                                            </a>
-                                        </span>
-                                        <!-- <a href="javascript:;" class="gBlank5" onclick="{$action_modify}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/btn_quantity_modify.gif" alt="변경" /></a> -->
-                                    </span>
-                                    <span class="{$nplusevent_show_display|display}">{$quantity}</span>
-                                </td>
                                 <!-- <td><span class="txtInfo">{$mileage}</span></td>
                                 <td><div class="txtInfo">개별배송<br />{$product_delv_str}</div></td>
                                 <td rowspan="{$delv_cnt}" class="{$delv_cnt_display|display}"><p class="{$delv_price_display|display}">{$delv_price_front_head}{$delv_price_front}{$delv_price_front_tail}<span class="{$delv_ref_display|display}"><br />{$delv_price_back_head}{$delv_price_back}{$delv_price_back_tail}</span><br /></p>{$delv_type}</td>
@@ -1434,7 +1434,7 @@
                 </div>
 
                 <!-- 선택상품 제어 버튼 -->
-                <div module="Order_SelectOrder" class="ec-base-button">
+                <div module="Order_SelectOrder" class="ec-base-button pc">
                     <span class="gLeft">
                         <!-- <strong class="text">선택상품을</strong>
                         <a href="#none" onclick="{$action_delete}" class='fd-btn-style02' style='width:83px; height:24px;'>삭제하기</a> -->
