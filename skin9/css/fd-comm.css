@@ -385,7 +385,10 @@ span.fd-review-more {display:inline-block; margin-left:5px; padding:4px 6px !imp
 .fd_detail_additional ul.product li .add_prd_info .price {font-size:15px; font-weight:400;} */
 
 /*********** 상품 검색결과 ***********/
-.prdSearch_cont {padding:120px 2.29vw 150px;}
+.prdSearch_cont {padding:35px 2.29vw 150px;}
+.prdSearch_cont .xans-search-form .searchbox {padding: 0; background: none; margin: 0 0 2px 0; display: flex; align-items: center; font-size: 14px; font-weight: 500; line-height: 19px;}
+.prdSearch_cont .xans-search-form .searchbox .item {margin: 0;}
+.prdSearch_cont .xans-search-form .searchbox #keyword {width: auto; padding: 0; margin: 0; border: 0; margin-bottom: 1px; margin-left: 4px; font-size: 14px; color: #8E8686;}
 
 /*********** 로그인 ***********/
 #login-wrap {padding:0 0 60px;}
@@ -1237,4 +1240,7 @@ span.fd-review-more {display:inline-block; margin-left:5px; padding:4px 6px !imp
     #fd-story .background-img {position: fixed; bottom: 0; left: 0; width: 100%; overflow: hidden; z-index: -1; /* margin-top: 537px; */}
     #fd-story .background-img a {width: 50%;}
     #fd-story .background-img a:nth-of-type(n+3) {display: none;}
+
+    /*********** 상품 검색결과 ***********/
+    .prdSearch_cont {padding:35px 2.29vw 150px;}
 }
