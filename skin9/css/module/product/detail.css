@@ -10,7 +10,7 @@
 
 /* 반응형 구성 */
 
-@media only screen and (min-width: 0) {
+/* @media only screen and (min-width: 0) {
     #detailinfo {width:400px; margin:0}
     .xans-product-detail .imgArea {padding-right:370px; margin-top:0}
     .nonefix {width:400px}
@@ -30,7 +30,7 @@
     .nonefix {width:600px}
     #listcontent-detail {margin-left:230px}
     #left {display:block}
-}
+} */
 
 
 
