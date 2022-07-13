@@ -1,4 +1,4 @@
-#top {position:fixed; z-index:99; width:100%; left:0; top:0; font-size:14px; height:20px; line-height:20px; color:#000; -webkit-transition-duration: 0.3; transition-duration: 0.3s;}
+#top {position:fixed; z-index:99; width:100%; left:0; top:0; font-size:14px; height:20px; line-height:20px; color:#fff; -webkit-transition-duration: 0.3; transition-duration: 0.3s; mix-blend-mode: difference;}
 #top.active {height:20px; background-color:transparent; -webkit-transition-duration: 0.3; transition-duration: 0.3s;}
 #top a {text-decoration:none;}
 #top a:hover {text-decoration:none;/*  font-weight:bold; */}
@@ -12,6 +12,8 @@
 #top .w-logo {display:none;}
 #top .logo img {width:150px; image-rendering:-webkit-optimize-contrast;}
 
+#top .logo a {font-size: 30px; color: #fff;}
+
 #top #topsearch {cursor: pointer;}
 /* #top #topsearch .search-bar {margin:0 0 0 25px; padding:0;}
 #top #topsearch .search-bar img { cursor:pointer; margin-left:3px; height:16px}
@@ -22,7 +24,9 @@
 
 #top #log {font-size:14px; margin-left:25px; cursor:pointer;}
 
-#top #topcarticon {font-size:14px; margin-left:25px;}
+#top #topcarticon {font-size:14px; margin-left:25px; margin-top: -1px;}
+#top #topcarticon a {color: #fff;}
+
 /* 멀티쇼핑몰 */
 /* #top .xans-layout-multishoplist.list { float:right; position:relative; z-index:10; height:19px; margin-top:0;} */
 #top .xans-layout-multishoplist.list span {display:flex; align-items:center; font-size:14px;}
